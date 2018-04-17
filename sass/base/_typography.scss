@@ -13,19 +13,46 @@ body {
 
 h1,
 h2  {
-    font-weight: 300;
+
     text-transform: uppercase;
-    color: $colorPrimary;
+    color: $colorOffwhite;
     word-spacing: 7px;
     text-align: center;
     letter-spacing: 1.5px;
 }
-
 h1 {
     font-size: 4rem;
+
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $colorWhite, $colorSecondary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+
+    &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($colorBlack, .2);
+    }
 }
+
 
 h2 {
     font-size: 2.5rem;
-    font-weight: 400;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $colorSecondary, $colorWhite);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+
+    &:hover {
+        transform: skewY(-2deg) skewX(-15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($colorBlack, .2);
+    }
 }

@@ -1,0 +1,18 @@
+.projectsection {
+    background-color: $colorOffwhite;
+    padding: 20rem;
+}
+
+
+.cardWrapper {
+
+    position: relative;
+    
+    &__cards { //side
+        height: 52rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+}

@@ -26,17 +26,25 @@
 
         <div class="header__topLineWrapper">
             <div class="header__logoBox">
-                <img src="img/logo.gif" alt="TechSchool Logo" class="header__logoBox--logo">
+                <img src="img/logoGreen.gif" alt="TechSchool Logo" class="header__logoBox--logo">
             </div>
 
             <div class="nav">
                 <div class="mainNav .js--main-nav">
                     <p class="nav__mainNav--mainNavItem">
-                        <a href="#sampleDevelopment">Sample Web Designs</a>
+                        <a href="#sampleDevelopment">View projects</a>
                     </p>
 
                     <p class="nav__mainNav--mainNavItem">
-                        <a href="#sampleBackendCode">Sample back-end code</a>
+                        <a href="#sampleBackendCode">View Code</a>
+                    </p>
+
+                    <p class="nav__mainNav--mainNavItem">
+                        <a href="#About">About</a>
+                    </p>
+
+                    <p class="nav__mainNav--mainNavItem">
+                        <a href="#Contact">Contact</a>
                     </p>
 
                 </div>
@@ -54,31 +62,32 @@
         <div class="header__heroBox">
             <div class="header__heroBox--mainHeading">
                 <h1 class="header__heroBox--mainHeadingText">Tisha Murvihill
-                    <br/>web developer</h1>
+                    <br/>
+                    <span "header__heroBox--mainHeadingTextLine2">Web Developer</span>
+                </h1>
             </div>
 
             <div class="header__heroBox--subTitle">
                 <h2 class="header__heroBox--subTitleText">Putting the client first</h2>
             </div>
         </div>
-
     </header>
 
-    <section class="projects">
-        <div class="tiles subgrid" id="sampleFrontEndProjects">
-            <a class="btn tile1" href="InnoGradSurvey/gradindex.html" target="_blank">Grad Survey Form
+    <section class="projectSection">
+        <div class="cardWrapper" id="projects">
+            <a class="cardWrapper__card cardWrapper__card--front" href="InnoGradSurvey/gradindex.html" target="_blank">Grad Survey Form
                 <br>for Tech School
                 <br>
             </a>
-            <a class="btn tile2" href="#">Kids Soccer Site</a>
-            <a class="btn tile3" href="#">Workout
+            <a class="cardWrapper__card cardWrapper__card--front" href="#">Kids Soccer Site</a>
+            <a class="cardWrapper__card cardWrapper__card--front" href="#">Workout
                 <br>Web App</a>
         </div>
     </section>
 
 
     <!-- comment out grid class divs  below and then copy and paste as needed -->
-    <section class="grid-test">
+    <!-- <section class="grid-test">
         <h3>If you see rows and columns below then your grid is working:</h3>
         <br/>
         <div class="row">
@@ -141,7 +150,7 @@
                 Col 3 of 4
             </div>
         </div>
-    </section>
+    </section> -->
 
 </body>
 

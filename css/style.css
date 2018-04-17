@@ -26,19 +26,40 @@ body {
 
 h1,
 h2 {
-  font-weight: 300;
   text-transform: uppercase;
-  color: #18ff80;
+  color: #f0f0ee;
   word-spacing: 7px;
   text-align: center;
   letter-spacing: 1.5px; }
 
 h1 {
-  font-size: 4rem; }
+  font-size: 4rem;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #ffffff, #D7DDDA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  transition: all .2s; }
+  h1:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 h2 {
   font-size: 2.5rem;
-  font-weight: 400; }
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #D7DDDA, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  transition: all .2s; }
+  h2:hover {
+    transform: skewY(-2deg) skewX(-15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .row {
   max-width: 114rem;
@@ -72,7 +93,7 @@ h2 {
 HEADER ELEMENTS INSTRUCTIONS
 ////////////////////*/
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/lightglassburstmytint.gif);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/glassburstgreen.gif);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -86,21 +107,20 @@ HEADER ELEMENTS INSTRUCTIONS
     .header__logoBox--logo {
       height: 10rem;
       opacity: .8; }
-  .header__heroBox--mainHeading {
+  .header__heroBox {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-  .header__heroBox--mainHeadingText {
-    text-align: center; }
-  .header__heroBox--subTitle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 75%; }
-  .header__heroBox--subTitleText {
-    text-align: center; }
+    .header__heroBox--mainHeadingText {
+      text-align: center; }
+      .header__heroBox--mainHeadingText > span {
+        text-transform: initial;
+        font-size: 80%; }
+    .header__heroBox--subTitle {
+      margin-top: 2rem; }
+    .header__heroBox--subTitleText {
+      text-align: center; }
   .header.ion-navicon {
     color: #fff;
     cursor: pointer;
@@ -121,7 +141,7 @@ HEADER ELEMENTS INSTRUCTIONS
     display: inline-block; }
     .nav__mainNav--mainNavItem a:link,
     .nav__mainNav--mainNavItem a:visited {
-      color: #75feb4;
+      color: #f0f0ee;
       text-decoration: none;
       text-transform: uppercase;
       font-size: 80%;
@@ -133,7 +153,7 @@ HEADER ELEMENTS INSTRUCTIONS
       font-weight: 400; }
     .nav__mainNav--mainNavItem a:hover,
     .nav__mainNav--mainNavItem a:active {
-      border-bottom: 2px solid #7f8fa6; }
+      border-bottom: 2px solid #AADDBB; }
 
 .hero {
   margin-bottom: 3rem;

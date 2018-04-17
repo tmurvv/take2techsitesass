@@ -3,17 +3,17 @@ HEADER ELEMENTS INSTRUCTIONS
 ////////////////////*/
 
 .header {
-    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../img/lightglassburstmytint.gif);
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/glassburstgreen.gif);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    height: 100vh;
+    height: 85vh;
     position: relative;
+
 
     &__topLineWrapper {
         height: 15%;
     }
-    
 
     &__logoBox {
         padding: 1rem;       
@@ -26,17 +26,22 @@ HEADER ELEMENTS INSTRUCTIONS
     }
 
     &__heroBox {
-        
+        @include centerBoxAbs;
         &--mainHeading {
-            @include centerBoxAbs;
+           
         }
         &--mainHeadingText {
             text-align: center;
+            
+            & > span {
+                text-transform: initial;
+                font-size: 80%;
+            }
         }
 
         &--subTitle {
-            @include centerBoxAbs; 
-            top: 75%;
+            margin-top: 2rem;
+           
         }
 
         &--subTitleText {
