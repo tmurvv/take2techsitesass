@@ -12,24 +12,70 @@
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js\script.js"></script>
 
-    <title>Murvihill, web developer</title>
+    <title>Tisha Murvihill, Developer</title>
 
 </head>
 
 <body>
-    <div class="hero">
-        <h1>My Web Template with Sass</h1>
-        <p>
-            <i class="icon-basic-world testIcon"></i>If I am preceded by a globe icon, you are connected with the font-icon file.</p>
-        <p class="normalizeWorks">If the globe is red, you are connected with css.</p>
-        <button type="button" class="btn" onclick="clickMe();">Click Me to test JavaScript.</button>
-        <div>
-            <img src="img/thisisatest.png">
+
+
+    <header class="header">
+
+        <div class="header__topLineWrapper">
+            <div class="header__logoBox">
+                <img src="img/logo.gif" alt="TechSchool Logo" class="header__logoBox--logo">
+            </div>
+
+            <div class="nav">
+                <div class="mainNav .js--main-nav">
+                    <p class="nav__mainNav--mainNavItem">
+                        <a href="#sampleDevelopment">Sample Web Designs</a>
+                    </p>
+
+                    <p class="nav__mainNav--mainNavItem">
+                        <a href="#sampleBackendCode">Sample back-end code</a>
+                    </p>
+
+                </div>
+
+                <div class="nav__mobileNav">
+                    <a href="#">
+                        <i class="nav__mobileNav--navIcon ion-navicon"></i>
+                    </a>
+                </div>
+
+            </div>
+
         </div>
-        <p>If you see the "This is a test" image, then your images are working.</figcaption>
-    </div>
+
+        <div class="header__heroBox">
+            <div class="header__heroBox--mainHeading">
+                <h1 class="header__heroBox--mainHeadingText">Tisha Murvihill
+                    <br/>web developer</h1>
+            </div>
+
+            <div class="header__heroBox--subTitle">
+                <h2 class="header__heroBox--subTitleText">Putting the client first</h2>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="projects">
+        <div class="tiles subgrid" id="sampleFrontEndProjects">
+            <a class="btn tile1" href="InnoGradSurvey/gradindex.html" target="_blank">Grad Survey Form
+                <br>for Tech School
+                <br>
+            </a>
+            <a class="btn tile2" href="#">Kids Soccer Site</a>
+            <a class="btn tile3" href="#">Workout
+                <br>Web App</a>
+        </div>
+    </section>
+
 
     <!-- comment out grid class divs  below and then copy and paste as needed -->
     <section class="grid-test">

@@ -1,0 +1,63 @@
+/*////////////////////
+HEADER ELEMENTS INSTRUCTIONS
+////////////////////*/
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../img/lightglassburstmytint.gif);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+
+    &__topLineWrapper {
+        height: 15%;
+    }
+    
+
+    &__logoBox {
+        padding: 1rem;       
+        float: left;
+
+        &--logo {
+            height: 10rem;
+            opacity: .8;
+        }
+    }
+
+    &__heroBox {
+        
+        &--mainHeading {
+            @include centerBoxAbs;
+        }
+        &--mainHeadingText {
+            text-align: center;
+        }
+
+        &--subTitle {
+            @include centerBoxAbs; 
+            top: 75%;
+        }
+
+        &--subTitleText {
+            text-align: center;
+        }
+    }
+ 
+    &.ion-navicon {
+        color: #fff;
+        cursor: pointer;
+        float: right;
+        display: none;
+        font-size: 200%;
+        margin-right: 10px;
+    }
+    
+    &.ion-close {
+        float: right;
+        margin-right: 10px;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+

@@ -1,0 +1,33 @@
+.nav {
+    margin-right: 2rem;
+    float:right;
+
+    &__mainNav {
+
+        &--mainNavItem {
+
+           display: inline-block;
+                          
+            & a:link,
+            & a:visited {
+                color: $colorPrimary-light;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 80%;
+                border-bottom: 2px solid transparent;
+                transition: border-bottom 0.4s;
+                padding: 10px 10px;
+                letter-spacing: 1.3px;
+                word-spacing: 5px;
+                font-weight: 400;
+            }
+            & a:hover,
+            & a:active {
+                border-bottom: 2px solid #7f8fa6;
+            }
+        }
+    }
+}
+
+
+

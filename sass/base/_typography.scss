@@ -1,6 +1,31 @@
+//accent color: #ff5252;
+
 body {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
+
+    color: #555;
+    font-family: 'Lato', 'Arial', san-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;    
     line-height: 1.7;
-    color: #666;
+    
+}
+
+h1,
+h2  {
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $colorPrimary;
+    word-spacing: 7px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
 }

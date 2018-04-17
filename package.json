@@ -1,7 +1,7 @@
 {
-  "name": "webtemplatesass",
+  "name": "Take2TechSiteSass",
   "version": "1.0.0",
-  "description": "Web template with Sass for Visual Studio Code",
+  "description": "Take2Tech site with Sass for Visual Studio Code",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
