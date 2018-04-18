@@ -6,6 +6,10 @@ $colorPrimary-dark: #00a84b;
 
 $colorSecondary: #D7DDDA;
 
+$colorTertiary: #f279bb;
+$colorTertiary-light: #f2dae7;
+$colorTertiary-dark: #881155;
+
 $colorGrey-light1: #f7f7f7;
 $colorGrey-light2: #eee;
 
@@ -22,3 +26,11 @@ $colorOffwhite: #f0f0ee;
 $grid-width: 114rem;
 $gutter-leftright: 1rem;
 $gutter-topbott: 2rem;
+
+//Z-INDEX
+
+$zBehind: -1;
+$zInfront: 1000;
+$zMiddle: 500;
+$zMiddleFront: 750;
+$zMiddleBack: 250;

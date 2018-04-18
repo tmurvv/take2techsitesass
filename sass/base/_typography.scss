@@ -1,56 +1,52 @@
 //accent color: #ff5252;
-
 body {
-
     color: #555;
     font-family: 'Lato', 'Arial', san-serif;
     font-size: 20px;
     font-weight: 300;
-    text-rendering: optimizeLegibility;    
+    text-rendering: optimizeLegibility;
     line-height: 1.7;
-    
 }
 
 h1,
-h2  {
-
+h2 {
     text-transform: uppercase;
     color: $colorOffwhite;
     word-spacing: 7px;
     text-align: center;
     letter-spacing: 1.5px;
 }
+
 h1 {
     font-size: 4rem;
-
-    font-weight: 700;
+    font-weight: 400;
     display: inline-block;
-    background-image: linear-gradient(to right, $colorWhite, $colorSecondary);
+    background-image: linear-gradient(to right, $colorWhite, $colorTertiary-light);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     letter-spacing: .2rem;
     transition: all .2s;
-
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
         text-shadow: .5rem 1rem 2rem rgba($colorBlack, .2);
     }
 }
 
-
 h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 400;
     display: inline-block;
-    background-image: linear-gradient(to right, $colorSecondary, $colorWhite);
-    -webkit-background-clip: text;
-    background-clip: text;
+    background-image: linear-gradient(to right, $colorTertiary-light, $colorWhite);
+    @supports ((-webkit-background-clip: text) or (background-clip: text)) {
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+
     color: transparent;
     letter-spacing: .2rem;
     transition: all .2s;
-
     &:hover {
         transform: skewY(-2deg) skewX(-15deg) scale(1.1);
         text-shadow: .5rem 1rem 2rem rgba($colorBlack, .2);

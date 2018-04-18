@@ -3,13 +3,13 @@ HEADER ELEMENTS INSTRUCTIONS
 ////////////////////*/
 
 .header {
-    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/glassburstgreen.gif);
+    background-image: linear-gradient(to right bottom, rgba($colorPrimary-light, .8), rgba($colorPrimary-dark, .8)), url(../img/valleyTenPeaks.jpg);
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center;
     background-size: cover;
     height: 85vh;
-    position: relative;
-
+    position: relative;  
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
     &__topLineWrapper {
         height: 15%;
@@ -21,31 +21,22 @@ HEADER ELEMENTS INSTRUCTIONS
 
         &--logo {
             height: 10rem;
-            opacity: .8;
+            opacity: .2;         
         }
     }
 
     &__heroBox {
         @include centerBoxAbs;
-        &--mainHeading {
-           
-        }
+    
         &--mainHeadingText {
-            text-align: center;
-            
+                      
             & > span {
-                text-transform: initial;
                 font-size: 80%;
             }
         }
 
-        &--subTitle {
-            margin-top: 2rem;
-           
-        }
-
         &--subTitleText {
-            text-align: center;
+            padding: 1.5rem;
         }
     }
  
