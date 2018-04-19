@@ -14,7 +14,15 @@
 }
 
 
-@mixin clipText {
+@mixin clipTextLight {
+    display: inline-block;
+    background-image: linear-gradient(to right, $colorWhite, $colorTertiary-light);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+@mixin clipTextDark {
     display: inline-block;
     background-image: linear-gradient(to right, $colorPrimary-light, $colorPrimary-dark);
     -webkit-background-clip: text;

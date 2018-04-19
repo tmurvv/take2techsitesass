@@ -1,18 +1,73 @@
-.projectsection {
+.projects {
     background-color: $colorOffwhite;
-    padding: 20rem;
+    margin: -6rem;
+    padding: 3rem;
+    &__header {
+        @include clipTextDark;
+        font-size: 160%;
+        margin: 4rem 0 4rem -2.5rem;
+        width: 100%;
+        text-align: center;
+    }
 }
 
-
 .cardWrapper {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
 
-    position: relative;
+    &__card {
+        //side
+
+        color: $colorWhite;
+
+        &:link,
+        &:visited {
+            height: 30rem;
+            width: 23rem;
+            padding: 2rem;
+            text-decoration: none;
+            border-radius: 7px;
+            height: 300px;
+            width: 300px;
+            border: 1px transparent #fff;
+            transition: background-color 0.4s, border 0.4s, color 0.4s;
+            text-align: center;
+            box-shadow: -10px -10px 20px #faf6f6 inset;
+            background-color: $colorTertiary;
+            //color: colorPrimary-dark;
+            margin-bottom: 30px;
+        }
+
     
-    &__cards { //side
-        height: 52rem;
-        position: absolute;
-        top: 0;
-        left: 0;
+        &:hover,
+        &:active {
+            background-color: $colorTertiary-dark;
+            color: $colorWhite;
+            border: 1px solid $colorPrimary;
+        }
+    
+        &--front-1 {
+            background-image: url(../img/GradSurveyScreenShot.png);
+            background-position: center 80px;
+            background-size: 23rem;
+            background-repeat: no-repeat;
+        }
+
+        &--front-2 {           
+            margin-top: 2.5rem;
+            background-image: url(../img/mySiteScreenShot.png);          
+            background-position: center;
+            background-size: 22rem;
+            background-repeat: no-repeat;
+        }
+
+        &--front-3 {                  
+            background-image: url(../img/underconstruction2mytint.gif);
+            background-position: center 80px;
+            background-size: 20rem;   
+            background-repeat: no-repeat;            
+        }
     }
 
 }

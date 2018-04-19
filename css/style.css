@@ -36,9 +36,11 @@ h1 {
   font-size: 4rem;
   font-weight: 400;
   display: inline-block;
+  display: inline-block;
   background-image: linear-gradient(to right, #ffffff, #f2dae7);
   -webkit-background-clip: text;
   background-clip: text;
+  color: transparent;
   color: transparent;
   letter-spacing: .2rem;
   transition: all .2s; }
@@ -51,14 +53,14 @@ h2 {
   text-transform: uppercase;
   font-weight: 400;
   display: inline-block;
-  background-image: linear-gradient(to right, #f2dae7, #ffffff);
+  display: inline-block;
+  background-image: linear-gradient(to right, #ffffff, #f2dae7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   color: transparent;
   letter-spacing: .2rem;
   transition: all .2s; }
-  @supports (-webkit-background-clip: text) or (background-clip: text) {
-    h2 {
-      -webkit-background-clip: text;
-      background-clip: text; } }
   h2:hover {
     transform: skewY(-2deg) skewX(-15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -99,9 +101,9 @@ HEADER ELEMENTS INSTRUCTIONS
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 85vh;
+  height: 75vh;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%); }
   .header__topLineWrapper {
     height: 15%; }
   .header__logoBox {
@@ -134,6 +136,7 @@ HEADER ELEMENTS INSTRUCTIONS
 
 .nav {
   margin-right: 2rem;
+  margin-top: 2rem;
   float: right; }
   .nav__mainNav--mainNavItem {
     display: inline-block; }
@@ -151,20 +154,64 @@ HEADER ELEMENTS INSTRUCTIONS
       font-weight: 400; }
     .nav__mainNav--mainNavItem a:hover,
     .nav__mainNav--mainNavItem a:active {
-      border-bottom: 2px solid #f279bb; }
+      border-bottom: 2px solid #f2dae7; }
 
 .testIcon {
   color: orangered;
   margin-right: 10px; }
 
-.projectsection {
+.projects {
   background-color: #f0f0ee;
-  padding: 20rem; }
+  margin: -6rem;
+  padding: 3rem; }
+  .projects__header {
+    display: inline-block;
+    background-image: linear-gradient(to right, #AADDBB, #00a84b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 160%;
+    margin: 4rem 0 4rem -2.5rem;
+    width: 100%;
+    text-align: center; }
 
 .cardWrapper {
-  position: relative; }
-  .cardWrapper__cards {
-    height: 52rem;
-    position: absolute;
-    top: 0;
-    left: 0; }
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around; }
+  .cardWrapper__card {
+    color: #ffffff; }
+    .cardWrapper__card:link, .cardWrapper__card:visited {
+      height: 30rem;
+      width: 23rem;
+      padding: 2rem;
+      text-decoration: none;
+      border-radius: 7px;
+      height: 300px;
+      width: 300px;
+      border: 1px transparent #fff;
+      transition: background-color 0.4s, border 0.4s, color 0.4s;
+      text-align: center;
+      box-shadow: -10px -10px 20px #faf6f6 inset;
+      background-color: #f279bb;
+      margin-bottom: 30px; }
+    .cardWrapper__card:hover, .cardWrapper__card:active {
+      background-color: #881155;
+      color: #ffffff;
+      border: 1px solid #18ff80; }
+    .cardWrapper__card--front-1 {
+      background-image: url(../img/GradSurveyScreenShot.png);
+      background-position: center 80px;
+      background-size: 23rem;
+      background-repeat: no-repeat; }
+    .cardWrapper__card--front-2 {
+      margin-top: 2.5rem;
+      background-image: url(../img/mySiteScreenShot.png);
+      background-position: center;
+      background-size: 22rem;
+      background-repeat: no-repeat; }
+    .cardWrapper__card--front-3 {
+      background-image: url(../img/underconstruction2mytint.gif);
+      background-position: center 80px;
+      background-size: 20rem;
+      background-repeat: no-repeat; }

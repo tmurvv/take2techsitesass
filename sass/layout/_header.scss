@@ -7,9 +7,9 @@ HEADER ELEMENTS INSTRUCTIONS
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 85vh;
+    height: 75vh;
     position: relative;  
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
 
     &__topLineWrapper {
         height: 15%;
@@ -56,4 +56,3 @@ HEADER ELEMENTS INSTRUCTIONS
         cursor: pointer;
     }
 }
-

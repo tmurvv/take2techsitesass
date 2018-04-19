@@ -21,9 +21,7 @@ h1 {
     font-size: 4rem;
     font-weight: 400;
     display: inline-block;
-    background-image: linear-gradient(to right, $colorWhite, $colorTertiary-light);
-    -webkit-background-clip: text;
-    background-clip: text;
+    @include clipTextLight;
     color: transparent;
     letter-spacing: .2rem;
     transition: all .2s;
@@ -38,11 +36,7 @@ h2 {
     text-transform: uppercase;
     font-weight: 400;
     display: inline-block;
-    background-image: linear-gradient(to right, $colorTertiary-light, $colorWhite);
-    @supports ((-webkit-background-clip: text) or (background-clip: text)) {
-        -webkit-background-clip: text;
-        background-clip: text;
-    }
+    @include clipTextLight;
 
     color: transparent;
     letter-spacing: .2rem;
