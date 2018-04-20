@@ -235,3 +235,19 @@ HEADER ELEMENTS INSTRUCTIONS
     transform: rotatey(180deg); }
   .card:hover .card__side--back {
     transform: translatey(-40rem) rotatey(0); }
+
+.glossary {
+  display: flex;
+  flex-flow: column; }
+  .glossary__item {
+    display: inline-flex; }
+
+.sectionGlossary__header {
+  display: inline-block;
+  background-image: linear-gradient(to right, #AADDBB, #00a84b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 160%;
+  margin: 4rem 0 2rem -2.5rem;
+  text-align: center; }

@@ -19,7 +19,6 @@ html {
     font-size: 56.25%; // font = 9px; screen= 1200px
 }
 
-
 @include respond(portrait) {
     font-size: 50%; // font = 8px; screen= 900px
 }

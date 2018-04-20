@@ -1,0 +1,17 @@
+.glossary {
+    display: flex;
+    flex-flow: column;
+
+
+    &__item {
+        display: inline-flex;
+    }
+}
+
+.sectionGlossary__header {
+    @include clipTextDark;
+    font-size: 160%;
+    margin: 4rem 0 2rem -2.5rem;
+    text-align: center;
+}
+
