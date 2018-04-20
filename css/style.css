@@ -53,7 +53,7 @@ h2 {
   text-transform: uppercase;
   font-weight: 400;
   display: inline-block;
-  texta: center;
+  text-align: center;
   display: inline-block;
   background-image: linear-gradient(to right, #ffffff, #f2dae7);
   -webkit-background-clip: text;
