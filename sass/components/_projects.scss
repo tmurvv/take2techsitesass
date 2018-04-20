@@ -2,6 +2,7 @@
     background-color: $colorOffwhite;
     margin: -6rem;
     padding: 3rem;
+
     &__header {
         @include clipTextDark;
         font-size: 160%;
@@ -15,59 +16,98 @@
     width: 100%;
     display: inline-flex;
     justify-content: space-around;
+}
 
-    &__card {
-        //side
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
 
-        color: $colorWhite;
+    &__side {       
+        position: absolute;
+        top: 0;
+        left: 0;        
+        height: 40rem;
+        width: 32rem;;
+        transition: all 0.8s ease;
+        backface-visibility: hidden;      
+        padding: 2rem;
+        color: $colorBlack;
+        // text-decoration: none;
+        border-radius: 7px;
+        border: 1px transparent #fff;
+        text-align: center;
+        box-shadow: -10px -10px 20px #faf6f6 inset;
 
-        &:link,
-        &:visited {
-            height: 30rem;
-            width: 23rem;
-            padding: 2rem;
-            text-decoration: none;
-            border-radius: 7px;
-            height: 300px;
-            width: 300px;
-            border: 1px transparent #fff;
-            transition: background-color 0.4s, border 0.4s, color 0.4s;
-            text-align: center;
-            box-shadow: -10px -10px 20px #faf6f6 inset;
-            background-color: $colorTertiary;
-            //color: colorPrimary-dark;
-            margin-bottom: 30px;
+        &--front {
+            background-color: $colorTertiary; // margin-bottom: 3rem;
+               
+            &-img1Container {
+                width: 23rem;
+            }
+            &-img1 {
+                width: 20rem;
+                margin: 2rem;
+            }       
         }
 
-    
-        &:hover,
-        &:active {
-            background-color: $colorTertiary-dark;
-            color: $colorWhite;
-            border: 1px solid $colorPrimary;
-        }
-    
-        &--front-1 {
-            background-image: url(../img/GradSurveyScreenShot.png);
-            background-position: center 80px;
-            background-size: 23rem;
-            background-repeat: no-repeat;
-        }
+        &--back {
+            background-color: $colorPrimary;
+            transform: rotateY(180deg);
 
-        &--front-2 {           
-            margin-top: 2.5rem;
-            background-image: url(../img/mySiteScreenShot.png);          
-            background-position: center;
-            background-size: 22rem;
-            background-repeat: no-repeat;
-        }
+            & > .o-list {
+                margin-top: 1rem;
+                color: $colorWhite;
+            }
 
-        &--front-3 {                  
-            background-image: url(../img/underconstruction2mytint.gif);
-            background-position: center 80px;
-            background-size: 20rem;   
-            background-repeat: no-repeat;            
+            // transform: rotateX(-180deg);
+            // height: 35rem;
+            // width: 25rem;
+            // padding: 2rem;
+            // color: $colorBlack;
+            // text-decoration: none;
+            // border-radius: 7px;
+            // border: 1px transparent #fff;
+            // transition: all 0.8s, border 0.4s, color 0.4s;
+            // text-align: center;
+            // box-shadow: -10px -10px 20px #faf6f6 inset;
+            // background-color: $colorTertiary;
+            // margin-bottom: 30px;   
+            
+
+
+            // &:hover,
+            // &:active {
+            //     // background-color: $colorTertiary-dark;
+            //     // color: $colorWhite;
+            //     // border: 1px solid $colorPrimary;
+            //     transform: rotateX(0);
         }
     }
 
+    &:hover &__side--front {
+        transform: rotatey(180deg);
+    }
+
+    &:hover &__side--back {
+        // background-color: $colorTertiary-dark;
+        // color: $colorWhite;
+        // border: 1px solid $colorPrimary;
+        transform: rotatey(0);
+    }
+
+
+    &__front2 {
+        // margin-top: 2.5rem;
+        // background-image: url(../img/mySiteScreenShot.png);
+        // background-position: center;
+        // background-size: 22rem;
+        // background-repeat: no-repeat;
+    }
+    &__front3 {
+        // background-image: url(../img/underconstruction2mytint.gif);
+        // background-position: center 80px;
+        // background-size: 20rem;
+        // background-repeat: no-repeat;
+    }
 }
