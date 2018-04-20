@@ -8,7 +8,7 @@ html {
     //This defines what our default font is in rems. We decided we wanted 1 rem to default to = 10px. 
     //We chose 10px for ease of conversion from px to rem
     font-size: 62.5%; // 1 rem = 10px or 10px/16px = 62.5%
-    background-color: $colorOffwhite;
+    background-color: $colorWhite;
 }
 
 //BTW Media queries do not refer to the rem size we defined above.

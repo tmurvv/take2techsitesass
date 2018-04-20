@@ -72,14 +72,14 @@
         </div>
     </header>
 
-    <section class="projects" id="projects">
+    <section class="sectionProjects" id="projects">
 
-        <h2 class="projects__header">Sample Projects</h2>
-        <h4 class="projects__header-sub">All sites are mobile friendly using current search engine optimization and performance optimization techniques.</h4>
+        <h2 class="sectionProjects__header">Sample Projects</h2>
+        <h4 class="sectionProjects__header-sub">All sites are mobile friendly using current search engine optimization and performance optimization techniques.</h4>
 
         <div class="cardWrapper">
-            <div class="card">              
-                <div class="card__side card__side--front" >
+            <div class="card">
+                <div class="card__side card__side--front">
 
                     <p>Grad Survey Form</p>
                     <div class="card__side--front-imgContainer">
@@ -104,8 +104,8 @@
                     <button type="button" class="o-btn">Visit Site</button>
                 </div>
             </div>
-            <div class="card">              
-                <div class="card__side card__side--front" >
+            <div class="card">
+                <div class="card__side card__side--front">
 
                     <p>This Site !!</p>
                     <div class="card__side--front-imgContainer">
@@ -120,18 +120,30 @@
                     This Site !!
                     <br> Technical Specs
                     <ul class="o-list">
-                        <li>mobile friendly</li>
-                        <li>responsive images</li>
-                        <li>advanced css</li>
-                        <li>Git versioning</li>
-                        <li>BEM naming</li>
-                        <li>Build process using node</li>
+                        <li>
+                            <a href="#mobileFriendly">mobile friendly</a>
+                        </li>
+                        <li>
+                            <a href="#reponsivePhotos">responsive images</a>
+                        </li>
+                        <li>
+                            <a href="#advcss">advanced css</a>
+                        </li>
+                        <li>
+                            <a href="#git">Git versioning</a>
+                        </li>
+                        <li>
+                            <a href="#bem">BEM naming</a>
+                        </li>
+                        <li>
+                            <a href="#node">Build process using node</a>
+                        </li>
                     </ul>
                     <button type="button" class="o-btn">Visit Site</button>
                 </div>
             </div>
-            <div class="card">              
-                <div class="card__side card__side--front" >
+            <div class="card">
+                <div class="card__side card__side--front">
 
                     <p>Educational tools</p>
                     <div class="card__side--front-imgContainer">
@@ -143,15 +155,26 @@
                 </div>
 
                 <div class="card__side card__side--back">
-                    <p>Educational Tools<br>Technical Specs</p>
-                    
+                    <p>Educational Tools
+                        <br>Technical Specs</p>
+
                     <ul class="o-list">
-                        <li>javascript</li>
-                        <li>Git versioning</li>
-                        <li>BEM naming</li>
-                        <li>Sass</li>
-                        <li>Build process using node</li>
-                                             
+                        <li>
+                            <a href="#js">javascript</a>
+                        </li>
+                        <li>
+                            <a href="#git">Git versioning</a>
+                        </li>
+                        <li>
+                            <a href="#bem">BEM naming</a>
+                        </li>
+                        <li>
+                            <a href="#sass">Sass</a>
+                        </li>
+                        <li>
+                            <a href="#node">Build process using node</a>
+                        </li>
+
                     </ul>
                     <button type="button" class="o-btn">Visit Site</button>
                 </div>
@@ -162,36 +185,114 @@
     </section>
 
     <section class="sectionGlossary">
-        <h2 class="sectionGlossary__header">Glossary</h2>
+        <h2 class="sectionGlossary__header">Glossary of Technical Terms</h2>
         <div class="glossary">
-            <div class="glossary__item">
-                <div class="term">mobile friendly</div>
-                <div class="meaning">works on any size screen from phone to computer</div>
-                <div class="helps">creates better usuability for your website visitor</div>
+            <div class="glossary__item glossary__item-firstRow">
+                <div class="glossary__item--term"><span class="u-underline">Specification</span></div>
+                <div class="glossary__item--helps">
+                    <span class="u-underline">How</span>&nbsp;
+                    <span class="u-underline">does</span>&nbsp;
+                    <span class="u-underline">it</span>&nbsp;
+                    <span class="u-underline">help</span>&nbsp;
+                    <span class="u-underline">me?</span>
+                </div>
+                <div class="glossary__item--meaning">
+                        <span class="u-underline">What</span>&nbsp;
+                        <span class="u-underline">is</span>&nbsp;
+                        <span class="u-underline">it?</span>
+                </div>
+
             </div>
-            <div class="glossary__item">
-                <div class="term">BEM naming</div>
-                <div class="meaning">a way to name items in the code that fosters clarity</div>
-                <div class="helps">Saves money when updates are required as everything is clearly marked and defined</div>
-            </div>
-            <div class="glossary__item">
-                <div class="term">responsive photos</div>
-                <div class="meaning">only downloads the size of photo that is needed</div>
-                <div class="helps">saves your visitors time and possibly money</div>
-            </div>
-            <div class="glossary__item">
-                <div class="term"></div>
-                <div class="meaning"></div>
-                <div class="helps"></div>
-            </div>
-            <div class="glossary__item">
-                <div class="term"></div>
-                <div class="meaning"></div>
-                <div class="helps"></div>
+            <div class="glossary__item" id="mobileFriendly">
+                <div class="glossary__item--term">mobile friendly</div>
+                <div class="glossary__item--helps">Creates better usuability for your website visitor.</div>
+                <div class="glossary__item--meaning">Works on any size screen from phone to computer</div>
+
             </div>
 
+            <div class="glossary__item" id="seo">
+                <div class="glossary__item--term">Search Engine Optimization</div>
+                <div class="glossary__item--helps">Creates better visibility for your website.</div>
+                <div class="glossary__item--meaning">Raises your position in Google searches</div>
+
+            </div>
+            <div class="glossary__item" id="performance">
+                <div class="glossary__item--term">Performance Optimization</div>
+                <div class="glossary__item--helps">Creates a better user experience for your website.</div>
+                <div class="glossary__item--meaning">Reduce download time and increase speed</div>
+
+            </div>
+            <div class="glossary__item" id="reponsivePhotos">
+                <div class="glossary__item--term">responsive photos</div>
+                <div class="glossary__item--helps">Saves website visitors time and possibly money by reducing bandwidth usage.</div>
+                <div class="glossary__item--meaning">Only downloads the size of photo that is needed for a particular screen size and resolution</div>
+
+            </div>
+
+            <div class="glossary__item" id="git">
+                <div class="glossary__item--term">Git version control</div>
+                <div class="glossary__item--helps">Your safety net! Reduces downtime.</div>
+                <div class="glossary__item--meaning">There is always a working version of your website to fall back on in case a bug-fix or feature update has
+                    "unintended consequences."
+                </div>
+            </div>
+
+            <div class="glossary__item" id="bem">
+                <div class="glossary__item--term">BEM naming</div>
+                <div class="glossary__item--helps">Saves you time and money when updating the website, especially when using a different developer.</div>
+                <div class="glossary__item--meaning">A way to name items in the code that fosters clarity so the developer can quickly find the place to implement
+                    a bug-fix or feature upgrade.</div>
+            </div>
+            <div class="glossary__item" id="advcss">
+                <div class="glossary__item--term">Advanced CSS</div>
+                <div class="glossary__item--helps">Improves conversion rates and user interation with animations and emphasis.</div>
+                <div class="glossary__item--meaning">Lorem ipsum dolor sit i placeat quidem?</div>
+            </div>
+            <div class="glossary__item" id="architechture">
+                <div class="glossary__item--term">7-1 Architechture</div>
+                <div class="glossary__item--helps">Saves the developer and the client time and money during initial development, upkeep, and future updates.
+                </div>
+                <div class="glossary__item--meaning">A standardized way to organize larger projects by splitting the code into seven "categories" that can be
+                    easily navigated at scale.</div>
+
+            </div>
+            <div class="glossary__item" id="js">
+                <div class="glossary__item--term">Javascript computer language</div>
+                <div class="glossary__item--helps">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe delectus optio eius ipsa corrupti possimus
+                    .
+                </div>
+                <div class="glossary__item--meaning">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia voluptates temporibus necessitatibus, sunt
+                    nulla eveniet!</div>
+
+            </div>
+            <div class="glossary__item" id="php">
+                <div class="glossary__item--term">PHP computer language</div>
+                <div class="glossary__item--helps">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe delectus optio eius ipsa corrupti possimus
+                    quo iure laborum rem.</div>
+                <div class="glossary__item--meaning">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia voluptates temporibus necessitatibus, sunt
+                    nulla eveniet !</div>
+
+            </div>
+            <div class="glossary__item" id="sass">
+                <div class="glossary__item--term">Sass preprocessor</div>
+                <div class="glossary__item--helps">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe delectus optio eius ipsa corrupti possimus
+                    quo iure laborum rem.</div>
+                <div class="glossary__item--meaning">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia voluptates temporibus necessitatibus, sunt
+                    nulla eveniet !</div>
+
+            </div>
+            <div class="glossary__item" id="node">
+                <div class="glossary__item--term">Node Build Process</div>
+                <div class="glossary__item--helps">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe delectus optio eius ipsa corrupti possimus
+                    quo iure laborum rem.</div>
+                <div class="glossary__item--meaning">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia voluptates temporibus necessitatibus, sunt
+                    nulla eveniet !</div>
+
+            </div>
+
+
         </div>
-    
+
 
 
 

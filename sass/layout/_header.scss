@@ -10,8 +10,10 @@ HEADER ELEMENTS INSTRUCTIONS
     background-size: cover;
     height: 75vh;
     position: relative;  
+    background-color: $colorOffwhite;
     clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
 
+ 
     &__topLineWrapper {
         height: 15%;
     }

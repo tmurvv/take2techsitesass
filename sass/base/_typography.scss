@@ -8,6 +8,11 @@ body {
     line-height: 1.7;
 }
 
+a:link,
+a:visited {
+    color: $colorWhite;
+}
+
 h1,
 h2 {
     text-transform: uppercase;
@@ -15,6 +20,7 @@ h2 {
     word-spacing: 7px;
     text-align: center;
     letter-spacing: 1.5px;
+    width: 100%
 }
 
 h1 {

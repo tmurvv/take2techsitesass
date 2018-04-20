@@ -5,7 +5,7 @@
 
 html {
   font-size: 62.5%;
-  background-color: #f0f0ee; }
+  background-color: #ffffff; }
 
 @media only screen and (max-width: 75em) {
   font-size: 56.25%; }
@@ -24,13 +24,18 @@ body {
   text-rendering: optimizeLegibility;
   line-height: 1.7; }
 
+a:link,
+a:visited {
+  color: #ffffff; }
+
 h1,
 h2 {
   text-transform: uppercase;
   color: #f0f0ee;
   word-spacing: 7px;
   text-align: center;
-  letter-spacing: 1.5px; }
+  letter-spacing: 1.5px;
+  width: 100%; }
 
 h1 {
   font-size: 4rem;
@@ -69,6 +74,9 @@ h2 {
 h4 {
   text-align: center;
   color: #881155; }
+
+.u-underline {
+  text-decoration: underline; }
 
 .o-btn {
   margin: 1rem;
@@ -117,6 +125,7 @@ HEADER ELEMENTS INSTRUCTIONS
   background-size: cover;
   height: 75vh;
   position: relative;
+  background-color: #f0f0ee;
   clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%); }
   .header__topLineWrapper {
     height: 15%; }
@@ -170,27 +179,32 @@ HEADER ELEMENTS INSTRUCTIONS
     .nav__mainNav--mainNavItem a:active {
       border-bottom: 2px solid #f2dae7; }
 
+.sectionProjects {
+  background-color: #f0f0ee;
+  height: 80rem;
+  padding: 3rem;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
+
+.sectionGlossary {
+  background-color: #ffffff; }
+
 .testIcon {
   color: orangered;
   margin-right: 10px; }
 
-.projects {
-  background-color: #f0f0ee;
-  height: 80rem;
-  padding: 3rem; }
-  .projects__header {
-    display: inline-block;
-    background-image: linear-gradient(to right, #AADDBB, #00a84b);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-size: 160%;
-    margin: 4rem 0 2rem -2.5rem;
-    text-align: center;
-    width: 100%; }
-    .projects__header-sub {
-      width: 40%;
-      margin: 2rem auto 6rem auto; }
+.sectionProjects__header {
+  display: inline-block;
+  background-image: linear-gradient(to right, #AADDBB, #00a84b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 160%;
+  margin: 4rem 0 2rem -2.5rem;
+  text-align: center;
+  width: 100%; }
+  .sectionProjects__header-sub {
+    width: 40%;
+    margin: 2rem auto 6rem auto; }
 
 .cardWrapper {
   width: 100%;
@@ -236,12 +250,6 @@ HEADER ELEMENTS INSTRUCTIONS
   .card:hover .card__side--back {
     transform: translatey(-40rem) rotatey(0); }
 
-.glossary {
-  display: flex;
-  flex-flow: column; }
-  .glossary__item {
-    display: inline-flex; }
-
 .sectionGlossary__header {
   display: inline-block;
   background-image: linear-gradient(to right, #AADDBB, #00a84b);
@@ -249,5 +257,27 @@ HEADER ELEMENTS INSTRUCTIONS
   background-clip: text;
   color: transparent;
   font-size: 160%;
-  margin: 4rem 0 2rem -2.5rem;
-  text-align: center; }
+  margin-top: 6rem; }
+
+.glossary {
+  display: flex;
+  flex-flow: column;
+  padding: 5rem; }
+  .glossary__item {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem; }
+    .glossary__item-firstRow {
+      font-weight: 700;
+      font-size: 110%;
+      color: #881155; }
+    .glossary__item--term {
+      flex: 0 0 20%;
+      text-transform: capitalize;
+      margin-right: 4rem; }
+    .glossary__item--helps {
+      flex: 0 0 40%;
+      margin-right: 4rem; }
+    .glossary__item--meaning {
+      flex: 0 0 40%; }

@@ -1,17 +1,43 @@
-.glossary {
-    display: flex;
-    flex-flow: column;
-
-
-    &__item {
-        display: inline-flex;
-    }
-}
-
 .sectionGlossary__header {
     @include clipTextDark;
     font-size: 160%;
-    margin: 4rem 0 2rem -2.5rem;
-    text-align: center;
+    margin-top: 6rem;
 }
+
+.glossary {
+    display: flex;
+    flex-flow: column;
+    padding: 5rem;
+
+    &__item {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 2rem;
+        
+        &-firstRow {
+            font-weight: 700;
+            font-size: 110%;
+            color: $colorTertiary-dark;
+        }
+
+
+        &--term {
+            flex: 0 0 20%;
+            text-transform: capitalize;
+            margin-right: 4rem;
+        }
+
+        &--helps {
+            flex: 0 0 40%;
+            margin-right: 4rem;
+        }
+
+        &--meaning {
+            flex: 0 0 40%;          
+        }
+    }
+}
+
+
 
