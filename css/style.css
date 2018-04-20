@@ -5,7 +5,7 @@
 
 html {
   font-size: 62.5%;
-  background-color: #fff; }
+  background-color: #f0f0ee; }
 
 @media only screen and (max-width: 75em) {
   font-size: 56.25%; }
@@ -53,6 +53,7 @@ h2 {
   text-transform: uppercase;
   font-weight: 400;
   display: inline-block;
+  text-emphasis: center;
   display: inline-block;
   background-image: linear-gradient(to right, #ffffff, #f2dae7);
   -webkit-background-clip: text;
@@ -65,9 +66,13 @@ h2 {
     transform: skewY(-2deg) skewX(-15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
+h4 {
+  text-align: center;
+  color: #881155; }
+
 .o-btn {
   margin: 1rem;
-  padding: 1.5rem;
+  padding: 1rem 1.25rem;
   border-radius: .5rem; }
 
 .o-list {
@@ -171,7 +176,7 @@ HEADER ELEMENTS INSTRUCTIONS
 
 .projects {
   background-color: #f0f0ee;
-  margin: -6rem;
+  height: 80rem;
   padding: 3rem; }
   .projects__header {
     display: inline-block;
@@ -180,9 +185,12 @@ HEADER ELEMENTS INSTRUCTIONS
     background-clip: text;
     color: transparent;
     font-size: 160%;
-    margin: 4rem 0 4rem -2.5rem;
-    width: 100%;
-    text-align: center; }
+    margin: 4rem 0 2rem -2.5rem;
+    text-align: center;
+    width: 100%; }
+    .projects__header-sub {
+      width: 40%;
+      margin: 2rem auto 6rem auto; }
 
 .cardWrapper {
   width: 100%;
@@ -191,12 +199,11 @@ HEADER ELEMENTS INSTRUCTIONS
 
 .card {
   perspective: 150rem;
-  -moz-perspective: 150rem;
-  position: relative; }
+  -moz-perspective: 150rem; }
   .card__side {
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
     height: 40rem;
     width: 32rem;
     transition: all 0.8s ease;
@@ -209,18 +216,22 @@ HEADER ELEMENTS INSTRUCTIONS
     box-shadow: -10px -10px 20px #faf6f6 inset; }
     .card__side--front {
       background-color: #f279bb; }
-      .card__side--front-img1Container {
+      .card__side--front-imgContainer {
         width: 23rem; }
-      .card__side--front-img1 {
-        width: 20rem;
+      .card__side--front-img {
+        width: 23rem;
+        height: 18rem;
         margin: 2rem; }
     .card__side--back {
-      background-color: #18ff80;
-      transform: rotateY(180deg); }
+      background-color: #881155;
+      transform: rotateY(180deg);
+      color: #ffffff; }
       .card__side--back > .o-list {
         margin-top: 1rem;
-        color: #ffffff; }
+        text-decoration: underline;
+        font-size: 80%;
+        text-transform: capitalize; }
   .card:hover .card__side--front {
     transform: rotatey(180deg); }
   .card:hover .card__side--back {
-    transform: rotatey(0); }
+    transform: translatey(-40rem) rotatey(0); }

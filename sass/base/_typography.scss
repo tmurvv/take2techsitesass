@@ -36,6 +36,8 @@ h2 {
     text-transform: uppercase;
     font-weight: 400;
     display: inline-block;
+    text-emphasis: center;
+
     @include clipTextLight;
 
     color: transparent;
@@ -45,4 +47,10 @@ h2 {
         transform: skewY(-2deg) skewX(-15deg) scale(1.1);
         text-shadow: .5rem 1rem 2rem rgba($colorBlack, .2);
     }
+}
+
+h4 {
+    text-align: center;
+    color: $colorTertiary-dark;
+
 }
