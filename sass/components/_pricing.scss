@@ -1,10 +1,9 @@
 .sectionPricing {
     &__header {
         @include clipTextDark;
-        font-size: 160%;
-        margin: 4rem 0;
-        text-align: center;
-        width: 100%;
+        font-size: 140%;
+        width: 60%;
+        margin: 4rem 20%;
     }
 }
 
@@ -20,11 +19,18 @@
         justify-content: space-between;
         border: 2px solid $colorTertiary;
         border-radius: .3rem;
-        margin-bottom: 8rem;
-        
+        margin-bottom: 8rem;  
 
         &--item {
             text-align: center;
+            & > a {
+                color: $colorPrimary-dark;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
 
             &-line1 {
                 border-bottom: 2px solid $colorTertiary;

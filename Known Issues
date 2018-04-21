@@ -1,5 +1,5 @@
-h2 clip text color not working.
-
-projects page tiles, images not centering properly
+h2 clip text color not working. need to center from 100% width, but background grad in small box. use flex?
 
 Glossary hover creates a right margin
+
+mailto links not working, make sure they work on my computer.

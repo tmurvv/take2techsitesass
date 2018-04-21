@@ -26,6 +26,7 @@
     display: inline-block;
     background-image: linear-gradient(to right, $colorPrimary-light, $colorPrimary-dark);
     -webkit-background-clip: text;
+
     background-clip: text;
     color: transparent;
 }

@@ -31,7 +31,6 @@ a:visited {
 h1,
 h2 {
   text-transform: uppercase;
-  color: #f0f0ee;
   word-spacing: 7px;
   text-align: center;
   letter-spacing: 1.5px;
@@ -60,7 +59,7 @@ h2 {
   display: inline-block;
   text-align: center;
   display: inline-block;
-  background-image: linear-gradient(to right, #ffffff, #f2dae7);
+  background-image: linear-gradient(to right, #AADDBB, #00a84b);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -115,6 +114,35 @@ h4 {
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 1rem) / 4) + 2 * 1rem); }
 
+.footer__menuContainer {
+  display: flex;
+  justify-content: space-between; }
+  .footer__menuContainer--menu-item {
+    text-transform: uppercase; }
+    .footer__menuContainer--menu-item:link, .footer__menuContainer--menu-item:visited {
+      color: #f0f0ee;
+      text-decoration: none;
+      transition: all .4s; }
+      .footer__menuContainer--menu-item:link:not(:last-child), .footer__menuContainer--menu-item:visited:not(:last-child) {
+        margin-right: 4rem; }
+    .footer__menuContainer--menu-item:hover, .footer__menuContainer--menu-item:active {
+      color: #ffffff;
+      text-decoration: underline; }
+  .footer__menuContainer--social-item:not(:last-child) {
+    margin-right: 4rem; }
+  .footer__menuContainer--social-item:last-child {
+    vertical-align: 18%;
+    font-size: 90%; }
+  .footer__menuContainer--social-item-img {
+    height: 3rem;
+    border-radius: .7rem; }
+
+.footer__copy {
+  text-align: center;
+  color: #ccc;
+  font-size: 75%;
+  margin-top: 2rem; }
+
 /*////////////////////
 HEADER ELEMENTS INSTRUCTIONS
 ////////////////////*/
@@ -136,7 +164,8 @@ HEADER ELEMENTS INSTRUCTIONS
   .header__heroBox--mainHeadingText > span {
     font-size: 80%; }
   .header__heroBox--subTitleText {
-    padding: 1.5rem; }
+    padding: 1.5rem;
+    background-image: linear-gradient(to right, #ffffff, #f2dae7); }
 
 .header.ion-navicon {
   color: #fff;
@@ -208,7 +237,7 @@ HEADER ELEMENTS INSTRUCTIONS
 
 .footer {
   background-color: #333;
-  height: 20rem; }
+  padding: 4rem; }
 
 .testIcon {
   color: orangered;
@@ -221,12 +250,17 @@ HEADER ELEMENTS INSTRUCTIONS
   background-clip: text;
   color: transparent;
   font-size: 160%;
-  margin: 4rem 0;
-  text-align: center;
-  width: 100%; }
+  width: 40%;
+  margin: 4rem 30%; }
   .sectionProjects__header-sub {
-    width: 40%;
+    width: 50%;
     margin: 2rem auto 6rem auto; }
+    .sectionProjects__header-sub > a {
+      display: inline-block;
+      background-image: linear-gradient(to right, #AADDBB, #00a84b);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent; }
 
 .cardWrapper {
   width: 100%;
@@ -241,6 +275,7 @@ HEADER ELEMENTS INSTRUCTIONS
     flex-flow: column;
     justify-content: space-between;
     width: 32rem;
+    height: 40rem;
     transition: all 0.8s ease;
     backface-visibility: hidden;
     padding: 2rem;
@@ -286,7 +321,7 @@ HEADER ELEMENTS INSTRUCTIONS
   padding: 5rem; }
   .glossary__item {
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     padding: 2rem; }
     .glossary__item-firstRow {
@@ -300,6 +335,11 @@ HEADER ELEMENTS INSTRUCTIONS
     .glossary__item--helps {
       flex: 0 0 40%;
       margin-right: 4rem; }
+      .glossary__item--helps > a {
+        color: #00a84b;
+        text-decoration: none; }
+        .glossary__item--helps > a:hover {
+          text-decoration: underline; }
     .glossary__item--meaning {
       flex: 0 0 40%; }
 
@@ -309,10 +349,9 @@ HEADER ELEMENTS INSTRUCTIONS
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: 160%;
-  margin: 4rem 0;
-  text-align: center;
-  width: 100%; }
+  font-size: 140%;
+  width: 60%;
+  margin: 4rem 20%; }
 
 .pricing {
   width: 100%;
@@ -328,6 +367,11 @@ HEADER ELEMENTS INSTRUCTIONS
     margin-bottom: 8rem; }
     .pricing__package--item {
       text-align: center; }
+      .pricing__package--item > a {
+        color: #00a84b;
+        text-decoration: none; }
+        .pricing__package--item > a:hover {
+          text-decoration: underline; }
       .pricing__package--item-line1 {
         border-bottom: 2px solid #f279bb;
         padding-bottom: 2rem;
@@ -358,7 +402,8 @@ HEADER ELEMENTS INSTRUCTIONS
   margin: 0 auto 4rem auto;
   padding: 2rem;
   background-color: #ffffff;
-  border-radius: .3rem; }
+  border-radius: .3rem;
+  box-shadow: -8px -8px 20px #f279bb inset; }
   .sectionAbout__container--imgCont {
     height: 15rem;
     width: 15rem;

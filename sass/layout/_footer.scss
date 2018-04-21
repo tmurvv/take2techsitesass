@@ -1,0 +1,50 @@
+.footer {
+    &__menuContainer {
+        display: flex;
+        justify-content: space-between;
+        &--menu {
+            &-item {
+                text-transform: uppercase;
+                &:link,
+                &:visited {
+                    color: $colorOffwhite;
+                    text-decoration: none;
+                    transition: all .4s;
+                    &:not(:last-child) {
+                        margin-right: 4rem;
+                    }
+                }
+                &:hover,
+                &:active {
+                    color: $colorWhite;
+                    text-decoration: underline;
+                }
+            }
+        }
+        &--social {
+            &-item {
+                &:not(:last-child) {
+                    margin-right: 4rem;
+                }
+
+                &:last-child {
+                     vertical-align: 18%;
+                     font-size: 90%;
+            
+                }
+
+                &-img {
+                    height: 3rem;
+                    border-radius: .7rem;
+                }
+            }
+        }
+    }
+
+    &__copy {
+        text-align: center;
+        color: $colorGrey-light3;
+        font-size: 75%;
+        margin-top: 2rem;
+    }
+}

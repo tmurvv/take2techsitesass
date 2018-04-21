@@ -3,13 +3,16 @@
     &__header {
         @include clipTextDark;
         font-size: 160%;
-        margin: 4rem 0;
-        text-align: center;
-        width: 100%;
+        width: 40%;
+        margin: 4rem 30%;
         
         &-sub {    
-            width: 40%; 
+            width: 50%; 
             margin: 2rem auto 6rem auto;
+
+            & > a {
+                @include clipTextDark;
+            }
         }
     }
 }
@@ -29,6 +32,7 @@
         flex-flow: column;
         justify-content: space-between;       
         width: 32rem;
+        height: 40rem;
         transition: all 0.8s ease;
         backface-visibility: hidden;      
         padding: 2rem;
