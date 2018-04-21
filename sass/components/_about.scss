@@ -2,8 +2,41 @@
     &__header {
         @include clipTextDark;
         font-size: 160%;
-        margin: 4rem 0;
+        margin: 2rem 0;
         text-align: center;
         width: 100%;
     }
+
+    &__container {
+        width: 60%;
+        margin: 0 auto 4rem auto;
+        padding: 2rem;
+        background-color: $colorWhite;
+        border-radius: .3rem;
+
+        &--imgCont {
+            height: 15rem;
+            width: 15rem;
+            float: left;
+          
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            
+            -webkit-clip-path: circle(45% at 50% 50%);
+            clip-path: circle(45% at 50% 50%);
+        }
+
+        &--content {
+
+            font-size: 80%;
+            & > a {
+                color: $colorTertiary;
+            }
+        }
+    }
+}
+
+.sectionAbout__content--imgCont-img {
+    height: 140%;
+    width: 100%;
 }

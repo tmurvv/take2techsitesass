@@ -185,25 +185,26 @@ HEADER ELEMENTS INSTRUCTIONS
 
 .sectionProjects {
   background-color: #f0f0ee;
-  height: 80rem;
+  width: 100%;
+  height: 90rem;
   padding: 3rem;
   clip-path: polygon(0 0, 100% 6rem, 100% 100%, 0 100%); }
 
 .sectionPricing {
   background-color: #ffffff;
-  height: 60rem;
   width: 100%;
+  padding: 4rem auto;
   clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%); }
 
 .sectionAbout {
   background-color: #f0f0ee;
-  height: 60rem;
   width: 100%;
   clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%); }
 
 .sectionGlossary {
   background-color: #ffffff;
-  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%); }
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+  width: 100%; }
 
 .footer {
   background-color: #333;
@@ -239,7 +240,6 @@ HEADER ELEMENTS INSTRUCTIONS
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    height: 40rem;
     width: 32rem;
     transition: all 0.8s ease;
     backface-visibility: hidden;
@@ -321,7 +321,26 @@ HEADER ELEMENTS INSTRUCTIONS
   .pricing__package {
     display: flex;
     flex-flow: column;
-    justify-content: space-between; }
+    padding: 2rem 3rem;
+    justify-content: space-between;
+    border: 2px solid #f279bb;
+    border-radius: .3rem;
+    margin-bottom: 8rem; }
+    .pricing__package--item {
+      text-align: center; }
+      .pricing__package--item-line1 {
+        border-bottom: 2px solid #f279bb;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem; }
+    .pricing__package--price {
+      justify-content: center;
+      color: #00a84b;
+      font-size: 140%;
+      font-style: italic;
+      border-top: 2px solid #f279bb;
+      padding-top: 2rem;
+      margin-top: 2rem;
+      text-align: center; }
 
 .sectionAbout__header {
   display: inline-block;
@@ -330,6 +349,29 @@ HEADER ELEMENTS INSTRUCTIONS
   background-clip: text;
   color: transparent;
   font-size: 160%;
-  margin: 4rem 0;
+  margin: 2rem 0;
   text-align: center;
+  width: 100%; }
+
+.sectionAbout__container {
+  width: 60%;
+  margin: 0 auto 4rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: .3rem; }
+  .sectionAbout__container--imgCont {
+    height: 15rem;
+    width: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(45% at 50% 50%);
+    clip-path: circle(45% at 50% 50%); }
+  .sectionAbout__container--content {
+    font-size: 80%; }
+    .sectionAbout__container--content > a {
+      color: #f279bb; }
+
+.sectionAbout__content--imgCont-img {
+  height: 140%;
   width: 100%; }

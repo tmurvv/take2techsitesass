@@ -11,7 +11,8 @@
 .sectionProjects {
 
     background-color: $colorOffwhite;
-    height: 80rem;
+    width: 100%;
+    height: 90rem;
     padding: 3rem;
     clip-path: polygon(0 0, 100% 6rem, 100% 100%, 0 100%);
 
@@ -19,14 +20,13 @@
 
 .sectionPricing {
     background-color: $colorWhite;
-    height: 60rem;
     width: 100%;
+    padding: 4rem auto;
     clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);  
 }
 
 .sectionAbout {
-    background-color: $colorOffwhite;
-    height: 60rem; 
+    background-color: $colorOffwhite; 
     width: 100%;
     clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%); 
 }
@@ -34,6 +34,7 @@
 .sectionGlossary {
     background-color: $colorWhite;
     clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+    width: 100%;
 }
 
 .footer {

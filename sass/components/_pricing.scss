@@ -10,13 +10,39 @@
 
 .pricing {
     width: 100%;
-
     display: inline-flex;
     justify-content: space-around;
     
     &__package {
         display: flex;
         flex-flow: column;
+        padding: 2rem 3rem;
         justify-content: space-between;
+        border: 2px solid $colorTertiary;
+        border-radius: .3rem;
+        margin-bottom: 8rem;
+        
+
+        &--item {
+            text-align: center;
+
+            &-line1 {
+                border-bottom: 2px solid $colorTertiary;
+                padding-bottom: 2rem;
+                margin-bottom: 2rem;
+            }
+        }
+        
+        &--price {
+            justify-content: center;
+            color: $colorPrimary-dark;
+            font-size: 140%;
+            font-style: italic;
+            border-top: 2px solid $colorTertiary;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
     }
 }
