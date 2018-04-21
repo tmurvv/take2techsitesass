@@ -1,0 +1,22 @@
+.sectionPricing {
+    &__header {
+        @include clipTextDark;
+        font-size: 160%;
+        margin: 4rem 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.pricing {
+    width: 100%;
+
+    display: inline-flex;
+    justify-content: space-around;
+    
+    &__package {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+}

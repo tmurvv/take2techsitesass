@@ -1,10 +1,42 @@
+.header {
+    background-image: linear-gradient(to right bottom, rgba($colorPrimary-light, .8), rgba($colorPrimary-dark, .8)), url(../img/valleyTenPeaks.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 75vh;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
+}
+
 .sectionProjects {
+
     background-color: $colorOffwhite;
-    height: 80rem;  
+    height: 80rem;
     padding: 3rem;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); 
+    clip-path: polygon(0 0, 100% 6rem, 100% 100%, 0 100%);
+
+}
+
+.sectionPricing {
+    background-color: $colorWhite;
+    height: 60rem;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);  
+}
+
+.sectionAbout {
+    background-color: $colorOffwhite;
+    height: 60rem; 
+    width: 100%;
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%); 
 }
 
 .sectionGlossary {
-    background-color: $colorWhite;    
+    background-color: $colorWhite;
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+}
+
+.footer {
+    background-color: $colorGrey-dark3;
+    height: 20rem;
 }

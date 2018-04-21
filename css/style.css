@@ -5,7 +5,7 @@
 
 html {
   font-size: 62.5%;
-  background-color: #ffffff; }
+  background-color: #f0f0ee; }
 
 @media only screen and (max-width: 75em) {
   font-size: 56.25%; }
@@ -118,44 +118,39 @@ h4 {
 /*////////////////////
 HEADER ELEMENTS INSTRUCTIONS
 ////////////////////*/
-.header {
-  background-image: linear-gradient(to right bottom, rgba(170, 221, 187, 0.8), rgba(0, 168, 75, 0.8)), url(../img/valleyTenPeaks.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 75vh;
-  position: relative;
-  background-color: #f0f0ee;
-  clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%); }
-  .header__topLineWrapper {
-    height: 15%; }
-  .header__logoBox {
-    padding: 1rem;
-    float: left; }
-    .header__logoBox--logo {
-      height: 10rem;
-      opacity: .2; }
-  .header__heroBox {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-    .header__heroBox--mainHeadingText > span {
-      font-size: 80%; }
-    .header__heroBox--subTitleText {
-      padding: 1.5rem; }
-  .header.ion-navicon {
-    color: #fff;
-    cursor: pointer;
-    float: right;
-    display: none;
-    font-size: 200%;
-    margin-right: 10px; }
-  .header.ion-close {
-    float: right;
-    margin-right: 10px;
-    color: #fff;
-    cursor: pointer; }
+.header__topLineWrapper {
+  height: 15%; }
+
+.header__logoBox {
+  padding: 1rem;
+  float: left; }
+  .header__logoBox--logo {
+    height: 10rem;
+    opacity: .2; }
+
+.header__heroBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .header__heroBox--mainHeadingText > span {
+    font-size: 80%; }
+  .header__heroBox--subTitleText {
+    padding: 1.5rem; }
+
+.header.ion-navicon {
+  color: #fff;
+  cursor: pointer;
+  float: right;
+  display: none;
+  font-size: 200%;
+  margin-right: 10px; }
+
+.header.ion-close {
+  float: right;
+  margin-right: 10px;
+  color: #fff;
+  cursor: pointer; }
 
 .nav {
   margin-right: 2rem;
@@ -179,14 +174,40 @@ HEADER ELEMENTS INSTRUCTIONS
     .nav__mainNav--mainNavItem a:active {
       border-bottom: 2px solid #f2dae7; }
 
+.header {
+  background-image: linear-gradient(to right bottom, rgba(170, 221, 187, 0.8), rgba(0, 168, 75, 0.8)), url(../img/valleyTenPeaks.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%); }
+
 .sectionProjects {
   background-color: #f0f0ee;
   height: 80rem;
   padding: 3rem;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
+  clip-path: polygon(0 0, 100% 6rem, 100% 100%, 0 100%); }
+
+.sectionPricing {
+  background-color: #ffffff;
+  height: 60rem;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%); }
+
+.sectionAbout {
+  background-color: #f0f0ee;
+  height: 60rem;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%); }
 
 .sectionGlossary {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%); }
+
+.footer {
+  background-color: #333;
+  height: 20rem; }
 
 .testIcon {
   color: orangered;
@@ -199,7 +220,7 @@ HEADER ELEMENTS INSTRUCTIONS
   background-clip: text;
   color: transparent;
   font-size: 160%;
-  margin: 4rem 0 2rem -2.5rem;
+  margin: 4rem 0;
   text-align: center;
   width: 100%; }
   .sectionProjects__header-sub {
@@ -257,7 +278,7 @@ HEADER ELEMENTS INSTRUCTIONS
   background-clip: text;
   color: transparent;
   font-size: 160%;
-  margin-top: 6rem; }
+  margin-top: 8rem; }
 
 .glossary {
   display: flex;
@@ -281,3 +302,34 @@ HEADER ELEMENTS INSTRUCTIONS
       margin-right: 4rem; }
     .glossary__item--meaning {
       flex: 0 0 40%; }
+
+.sectionPricing__header {
+  display: inline-block;
+  background-image: linear-gradient(to right, #AADDBB, #00a84b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 160%;
+  margin: 4rem 0;
+  text-align: center;
+  width: 100%; }
+
+.pricing {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around; }
+  .pricing__package {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between; }
+
+.sectionAbout__header {
+  display: inline-block;
+  background-image: linear-gradient(to right, #AADDBB, #00a84b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 160%;
+  margin: 4rem 0;
+  text-align: center;
+  width: 100%; }
