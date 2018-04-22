@@ -228,11 +228,12 @@ HEADER ELEMENTS INSTRUCTIONS
 .sectionAbout {
   background-color: #f0f0ee;
   width: 100%;
-  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%); }
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+  margin-top: -5rem; }
 
 .sectionGlossary {
   background-color: #ffffff;
-  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 2.5%, 100% 100%, 0 100%);
   width: 100%; }
 
 .footer {
@@ -313,7 +314,7 @@ HEADER ELEMENTS INSTRUCTIONS
   background-clip: text;
   color: transparent;
   font-size: 160%;
-  margin-top: 8rem; }
+  margin-top: 10rem; }
 
 .glossary {
   display: flex;
@@ -342,6 +343,25 @@ HEADER ELEMENTS INSTRUCTIONS
           text-decoration: underline; }
     .glossary__item--meaning {
       flex: 0 0 40%; }
+      .glossary__item--meaning > a {
+        color: #00a84b;
+        text-decoration: none; }
+        .glossary__item--meaning > a:hover {
+          text-decoration: underline; }
+
+/************
+Sticky Headings
+*************/
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 80%;
+  background-color: #AADDBB;
+  text-align: center;
+  padding: 1rem 7rem;
+  border-radius: 2rem; }
 
 .sectionPricing__header {
   display: inline-block;
@@ -362,9 +382,9 @@ HEADER ELEMENTS INSTRUCTIONS
     flex-flow: column;
     padding: 2rem 3rem;
     justify-content: space-between;
-    border: 2px solid #f279bb;
+    border: 6px double #f279bb;
     border-radius: .3rem;
-    margin-bottom: 8rem; }
+    margin-bottom: 13rem; }
     .pricing__package--item {
       text-align: center; }
       .pricing__package--item > a {
@@ -393,13 +413,13 @@ HEADER ELEMENTS INSTRUCTIONS
   background-clip: text;
   color: transparent;
   font-size: 160%;
-  margin: 2rem 0;
+  margin: 4rem 0 2rem 0;
   text-align: center;
   width: 100%; }
 
 .sectionAbout__container {
   width: 60%;
-  margin: 0 auto 4rem auto;
+  margin: 0 auto 8rem auto;
   padding: 2rem;
   background-color: #ffffff;
   border-radius: .3rem;

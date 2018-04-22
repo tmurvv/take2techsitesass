@@ -1,9 +1,7 @@
 .sectionGlossary__header {
     @include clipTextDark;
     font-size: 160%;
-    margin-top: 8rem;
-
-    
+    margin-top: 10rem;   
 }
 
 .glossary {
@@ -28,6 +26,8 @@
             flex: 0 0 20%;
             text-transform: capitalize;
             margin-right: 4rem;
+
+           
         }
 
         &--helps {
@@ -41,13 +41,38 @@
                     text-decoration: underline;
                 }
             }
-
         }
 
         &--meaning {
             flex: 0 0 40%;  
+
+            & > a {
+                color: $colorPrimary-dark;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
     }
+}
+
+/************
+Sticky Headings
+*************/
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 80%;
+    background-color: $colorPrimary-light;
+    text-align: center;
+    padding: 1rem 7rem;
+    border-radius: 2rem;
+
+
 }
 
 

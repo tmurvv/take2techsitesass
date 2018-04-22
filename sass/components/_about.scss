@@ -2,14 +2,14 @@
     &__header {
         @include clipTextDark;
         font-size: 160%;
-        margin: 2rem 0;
+        margin: 4rem 0 2rem 0;
         text-align: center;
         width: 100%;
     }
 
     &__container {
         width: 60%;
-        margin: 0 auto 4rem auto;
+        margin: 0 auto 8rem auto;
         padding: 2rem;
         background-color: $colorWhite;
         border-radius: .3rem;

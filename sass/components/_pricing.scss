@@ -17,9 +17,10 @@
         flex-flow: column;
         padding: 2rem 3rem;
         justify-content: space-between;
-        border: 2px solid $colorTertiary;
+        border: 6px double $colorTertiary;
         border-radius: .3rem;
-        margin-bottom: 8rem;  
+        margin-bottom: 13rem;
+       
 
         &--item {
             text-align: center;
