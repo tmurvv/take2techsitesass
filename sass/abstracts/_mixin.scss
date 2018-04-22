@@ -21,15 +21,35 @@
     background-clip: text;
     color: transparent;
 }
-
-@mixin clipTextDark {
+@mixin clipTextLightRev {
     display: inline-block;
-    background-image: linear-gradient(to right, $colorPrimary-light, $colorPrimary-dark);
+    background-image: linear-gradient(to left, $colorWhite, $colorTertiary-light);
     -webkit-background-clip: text;
-
     background-clip: text;
     color: transparent;
 }
+
+@mixin clipTextDark {
+    background-image: linear-gradient(to right, $colorPrimary-light, $colorPrimary-dark);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+@mixin clipTextDarkRev {
+    background-image: linear-gradient(to left, $colorPrimary-light, $colorPrimary-dark);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+@mixin clipTextTertiary {
+    background-image: linear-gradient(to right, $colorOffwhite 60%, $colorTertiary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 
 //MEDIA QUERIES SECTION
 //Recommended order of developing queries--base + typography > grid + page layout > components

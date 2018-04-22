@@ -1,5 +1,3 @@
-h2 clip text color not working. need to center from 100% width, but background grad in small box. use flex?
-
-Glossary hover creates a right margin
-
 mailto links not working, make sure they work on my computer.
+
+Jump to anchor tags gets you to item covered up by sticky menu in glossary. fix with JS?

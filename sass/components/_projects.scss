@@ -1,50 +1,38 @@
 .sectionProjects {
-    
-    &__header {
-        @include clipTextDark;
-        font-size: 160%;
-        width: 40%;
-        margin: 4rem 30%;
-        
-        &-sub {    
-            width: 50%; 
-            margin: 2rem auto 6rem auto;
-
-            & > a {
-                @include clipTextDark;
-            }
+    &--subText {
+        width: 50%;
+        margin: 3rem auto 8rem auto;
+        &>a {
+            @include clipTextDarkRev;
         }
     }
 }
+
 
 .cardWrapper {
     width: 100%;
     display: inline-flex;
     justify-content: space-around;
 }
-
 .card {
     perspective: 150rem;
     -moz-perspective: 150rem;
-
-    &__side {       
+    &__side {
         display: flex;
         flex-flow: column;
-        justify-content: space-between;       
+        justify-content: space-between;
         width: 32rem;
         height: 40rem;
         transition: all 0.8s ease;
-        backface-visibility: hidden;      
+        backface-visibility: hidden;
         padding: 2rem;
         color: $colorBlack;
         border-radius: 7px;
-        border: 1px transparent #fff;
+        border: 1px transparent $colorWhite;
         text-align: center;
         box-shadow: -10px -10px 20px #faf6f6 inset;
-
         &--front {
-            background-color: $colorTertiary; 
-               
+            background-color: $colorTertiary;
             &-imgContainer {
                 width: 23rem;
             }
@@ -52,22 +40,19 @@
                 width: 23rem;
                 height: 18rem;
                 margin: 2rem;
-            } 
+            }
         }
-
+    
         &--back {
             background-color: $colorTertiary-dark;
             transform: rotateY(180deg);
             color: $colorWhite;
-
-            & > .o-list {
+            &>.o-list {
                 margin-top: 1rem;
                 text-decoration: underline;
                 font-size: 80%;
-                text-transform: capitalize;              
-            }
-
-            // transform: rotateX(-180deg);
+                text-transform: capitalize;
+            } // transform: rotateX(-180deg);
             // height: 35rem;
             // width: 25rem;
             // padding: 2rem;
@@ -80,9 +65,6 @@
             // box-shadow: -10px -10px 20px #faf6f6 inset;
             // background-color: $colorTertiary;
             // margin-bottom: 30px;   
-            
-
-
             // &:hover,
             // &:active {
             //     // background-color: $colorTertiary-dark;
@@ -91,16 +73,12 @@
             //     transform: rotateX(0);
         }
     }
-
     &:hover &__side--front {
         transform: rotatey(180deg);
     }
-
     &:hover &__side--back {
-
         transform: translatey(-40rem) rotatey(0);
     }
-
     &__front2 {
         // margin-top: 2.5rem;
         // background-image: url(../img/mySiteScreenShot.png);

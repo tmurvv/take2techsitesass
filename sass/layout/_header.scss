@@ -3,50 +3,54 @@ HEADER ELEMENTS INSTRUCTIONS
 ////////////////////*/
 
 .header {
-
     &__topLineWrapper {
         height: 15%;
     }
-
     &__logoBox {
-        padding: 1rem;       
+        padding: 1rem;
         float: left;
-
         &--logo {
             height: 10rem;
-            opacity: .2;         
+            opacity: .2;
         }
     }
 
     &__heroBox {
         @include centerBoxAbs;
-    
-        &--mainHeadingText {
-                      
-            & > span {
-                font-size: 80%;
+        text-align: center;
+        font-size: 110%;
+
+        &--mainHeading {
+            letter-spacing: .8rem;
+            font-weight: 600;
+
+            &>span {
+                @include clipTextLightRev;
+                font-size: 85%;
+                font-weight: 500;
             }
         }
 
-        &--subTitleText {
-            padding: 1.5rem;
-            background-image: linear-gradient(to right, $colorWhite, $colorTertiary-light);
+        &--subText {
+            font-weight: 400;
+            padding-top: 3rem;
+            @include clipTextTertiary;
+            font-size: 75%;
         }
     }
- 
+    
     &.ion-navicon {
-        color: #fff;
+        color: $colorWhite;
         cursor: pointer;
         float: right;
         display: none;
         font-size: 200%;
         margin-right: 10px;
     }
-    
     &.ion-close {
         float: right;
         margin-right: 10px;
-        color: #fff;
+        color: $colorWhite;
         cursor: pointer;
     }
 }

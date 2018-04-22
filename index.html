@@ -31,7 +31,7 @@
             <div class="nav">
                 <div class="mainNav .js--main-nav">
                     <p class="nav__mainNav--mainNavItem">
-                        <a href="#projects">View projects</a>
+                        <span><a href="#projects">View projects</a></span>
                     </p>
 
                     <p class="nav__mainNav--mainNavItem">
@@ -60,21 +60,23 @@
 
         <div class="header__heroBox">
             <div class="header__heroBox--mainHeading">
-                <h1 class="header__heroBox--mainHeadingText">Tisha Murvihill
+                <h1 class="header__heroBox--mainHeading o-headingPrimary">Tisha Murvihill
                     <br/>
-                    <span "header__heroBox--mainHeadingTextLine2">Web Developer</span>
+                    <span>Web Developer</span>
                 </h1>
             </div>
 
             <div class="header__heroBox--subTitle">
-                <h2 class="header__heroBox--subTitleText">Calgary, Alberta, Canada</h2>
+                <h2 class="o-headingSecondary header__heroBox--subText">Calgary, Alberta, Canada</h2>
             </div>
         </div>
     </header>
     <section class="sectionProjects" id="projects">
-
-        <h2 class="sectionProjects__header">Sample Projects</h2>
-        <h4 class="sectionProjects__header-sub">All sites are
+        
+        <div class="o-centerHeading">
+            <h2 class="o-headingSecondary">Sample Projects</h2>
+        </div>
+        <h4 class="sectionProjects--subText">All sites are
             <a href="#mobileFriendly">mobile friendly</a> using current
             <a href="#seo">search engine optimization</a> and
             <a href="#performance">performance optimization</a> techniques.</h4>
@@ -96,12 +98,12 @@
                     Grad Survey Form
                     <br> Technical Specs
                     <ul class="o-list">
-                        <li>mobile friendly</li>
-                        <li>responsive images</li>
-                        <li>javascript/PHP</li>
+                        <li><a href="#mobileFriendly">mobile friendly</a></li>
+                        <li><a href="#responsivePhotos">responsive images</a></li>
+                        <li><a href="#js">javascript</a>/<a href="#php">PHP</a></li>
                         <li>html forms</li>
-                        <li>search engine optimization</li>
-                        <li>performance optimization</li>
+                        <li><a href="#seo">search engine optimization</a></li>
+                        <li><a href="#performance">performance optimization</a></li>
                     </ul>
                     <button type="button" class="o-btn">Visit Site</button>
                 </div>
@@ -129,7 +131,7 @@
                             <a href="#reponsivePhotos">responsive images</a>
                         </li>
                         <li>
-                            <a href="#advcss">advanced CSS</a>
+                            <a href="#sass">SASS</a>
                         </li>
                         <li>
                             <a href="#git">Git versioning</a>
@@ -189,8 +191,8 @@
         </div>
     </section>
     <section class="sectionPricing" id="pricing">
-        <div class="sectionPricing__header">
-            <h2 class="sectionPricing__header">Pricing</h2>
+        <div class="o-centerHeading">
+            <h2 class="o-headingSecondary">Pricing</h2>
         </div>
         <div class="pricing">
             <div class="pricing__package">
@@ -230,8 +232,8 @@
         </div>
     </section>
     <section class="sectionAbout" id="about">
-        <div class="sectionAbout__header">
-            <h2 class="sectionAbout__header">About</h2>
+        <div class="o-centerHeading">
+            <h2 class="o-headingSecondary">About</h2>
         </div>
         <div class="sectionAbout__container">
             <!-- .story-->
@@ -251,9 +253,11 @@
         </div>
     </section>
     <section class="sectionGlossary">
-        <h2 class="sectionGlossary__header">Glossary of Technical Terms</h2>
+        <div class="o-centerHeading">
+            <h2 class="o-headingSecondary">Glossary of Technical Terms</h2>
+        </div>
         <div class="glossary">
-            <div class="glossary__item glossary__item-firstRow">
+            <div class="glossary__item glossary__item-firstRow" id="mobileFriendly">
                 <div class="glossary__item--term">
                     <span class="u-underline">Specification</span>
                 </div>
@@ -270,7 +274,7 @@
                     <span class="u-underline">it?</span>
                 </div>
             </div>
-            <div class="glossary__item glossary__item-firstRow sticky">
+            <div class="glossary__item glossary__item-firstRow glossary__sticky">
                 <div class="glossary__item--term">
                     <span class="u-underline">Specification</span>
                 </div>
@@ -288,33 +292,33 @@
                 </div>
             </div>
 
-            <div class="glossary__item" id="mobileFriendly">
+            <div class="glossary__item" id="seo">
                 <div class="glossary__item--term">mobile friendly</div>
                 <div class="glossary__item--helps">Creates better usuability for your website visitor.</div>
                 <div class="glossary__item--meaning">Works on any size screen from phone to computer</div>
 
             </div>
 
-            <div class="glossary__item" id="seo">
+            <div class="glossary__item" id="performance">
                 <div class="glossary__item--term">Search Engine Optimization</div>
                 <div class="glossary__item--helps">Creates better visibility for your website.</div>
                 <div class="glossary__item--meaning">Raises your position in Google searches</div>
 
             </div>
-            <div class="glossary__item" id="performance">
+            <div class="glossary__item" id="responsivePhotos">
                 <div class="glossary__item--term">Performance Optimization</div>
                 <div class="glossary__item--helps">Creates a better user experience for your website.</div>
                 <div class="glossary__item--meaning">Reduce download time and increase speed</div>
 
             </div>
-            <div class="glossary__item" id="reponsivePhotos">
+            <div class="glossary__item" id="git">
                 <div class="glossary__item--term">responsive images</div>
                 <div class="glossary__item--helps">Saves website visitors time and possibly money by reducing bandwidth usage.</div>
                 <div class="glossary__item--meaning">Only downloads the size of photo that is needed for a particular screen size and resolution</div>
 
             </div>
 
-            <div class="glossary__item" id="git">
+            <div class="glossary__item" id="bem">
                 <div class="glossary__item--term">Git version control</div>
                 <div class="glossary__item--helps">Your safety net! Reduces downtime.</div>
                 <div class="glossary__item--meaning">There is always a working version of your website to fall back on in case a bug-fix or feature update has
@@ -322,23 +326,23 @@
                 </div>
             </div>
 
-            <div class="glossary__item" id="bem">
+            <div class="glossary__item" id="advcss">
                 <div class="glossary__item--term">BEM naming</div>
-                <div class="glossary__item--helps">Saves you time and money when updating the website, especially when using a different developer.</div>
+                <div class="glossary__item--helps">Saves you time and money when your developer is updating the website, especially if a new developer.</div>
                 <div class="glossary__item--meaning">A way to name items in the code that fosters clarity so the developer can quickly find the place to implement
                     a bug-fix or feature upgrade.</div>
             </div>
 
-            <div class="glossary__item" id="advcss">
+            <div class="glossary__item" id="architechture">
                 <div class="glossary__item--term">Advanced CSS</div>
                 <div class="glossary__item--helps">Improves
-                    <a href="#conversion">conversion rates</a> and user interation with animations and emphasis.</div>
+                    <a href="#conversion">conversion rates</a> and user interation by moving elements to create emphasis.</div>
                 <div class="glossary__item--meaning">CSS or Cascading Style Sheets is a language used to define visual appearance and 
                     formatting of websites. Advanced CSS introduces moving elements and additional effects to increase 
                     <a href="#conversion">conversion rates</a>.</div>
             </div>
 
-            <div class="glossary__item" id="architechture">
+            <div class="glossary__item" id="conversion">
                 <div class="glossary__item--term">7-1 Architechture</div>
                 <div class="glossary__item--helps">Saves the developer and the client time and money during initial development, upkeep, and future updates.
                 </div>
@@ -346,7 +350,7 @@
                     easily navigated at scale.</div>
             </div>
 
-            <div class="glossary__item" id="conversion">
+            <div class="glossary__item" id="js">
                 <div class="glossary__item--term">conversion rate</div>
                 <div class="glossary__item--helps">Grow your business.
                 </div>
@@ -354,33 +358,34 @@
                     out a "contact me" form.</div>
             </div>
 
-            <div class="glossary__item" id="js">
+            <div class="glossary__item" id="php">
                 <div class="glossary__item--term">Javascript computer language</div>
                 <div class="glossary__item--helps">Gives you more options for responses and information from your customers.
                 </div>
                 <div class="glossary__item--meaning">Alongside HTML and CSS, JavaScript is one of the three core technologies of the World Wide Web. 
                         It enables the website to respond to user inputs such as button clicks, scrolls, and submissions.
-                        The vast majority of websites use it, and all major web browsers have a dedicated JavaScript "engine" to execute it.<sub>wiki</sub></div>
+                        The vast majority of websites use it, and all major web browsers have a dedicated JavaScript "engine" to execute it<sub>wiki</sub>.</div>
             </div>
 
-            <div class="glossary__item" id="php">
+            <div class="glossary__item" id="sass">
                 <div class="glossary__item--term">PHP computer language</div>
                 <div class="glossary__item--helps">Used to interact with forum posts and e-mails, etc.</div>
                 <div class="glossary__item--meaning">PHP is a server-side scripting language designed for web development <sub>wiki</sub>.</div>
             </div>
 
-            <div class="glossary__item" id="sass">
+            <div class="glossary__item" id="node">
                 <div class="glossary__item--term">Sass preprocessor</div>
                 <div class="glossary__item--helps">Saves you time and money by reducing repetitive entries from the developer.</div>
                 <div class="glossary__item--meaning">Sass is one of a class of tools called CSS preprocessors. 
-                    Preprocessors help us code more efficiently by adding special features into normal CSS, such as variables, nested rules, code groupings (mixins), and more.<sub>learnhowtoprogram.com</sub></div>
+                    Preprocessors help us code more efficiently by adding special features into normal CSS, such as variables, 
+                    nested rules, code groupings (mixins), and more<sub>www.learnhowtoprogram.com</sub>.</div>
             </div>
 
-            <div class="glossary__item" id="node">
+            <div class="glossary__item" id="">
                 <div class="glossary__item--term">Node Build Process</div>
                 <div class="glossary__item--helps">Reduces downtime by automating the final stage of website programming.</div>
                 <div class="glossary__item--meaning">Build tools are programs that automate the creation of executable applications from source code. 
-                    Building incorporates compiling, linking and packaging the code into a usable or executable form. <sub>techopedia.com</sub></div>
+                    Building incorporates compiling, linking and packaging the code into a usable or executable form<sub>techopedia.com</sub>.</div>
             </div>
         </div>
     </section>

@@ -28,15 +28,10 @@ a:link,
 a:visited {
   color: #ffffff; }
 
-h1,
-h2 {
-  text-transform: uppercase;
-  word-spacing: 7px;
-  text-align: center;
-  letter-spacing: 1.5px;
-  width: 100%; }
+.o-centerHeading {
+  text-align: center; }
 
-h1 {
+.o-headingPrimary {
   font-size: 4rem;
   font-weight: 400;
   display: inline-block;
@@ -48,25 +43,22 @@ h1 {
   color: transparent;
   letter-spacing: .2rem;
   transition: all .2s; }
-  h1:hover {
+  .o-headingPrimary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
-h2 {
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: 400;
-  display: inline-block;
-  text-align: center;
+.o-headingSecondary {
   display: inline-block;
   background-image: linear-gradient(to right, #AADDBB, #00a84b);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  color: transparent;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
   letter-spacing: .2rem;
   transition: all .2s; }
-  h2:hover {
+  .o-headingSecondary:hover {
     transform: skewY(-2deg) skewX(-15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
@@ -160,15 +152,31 @@ HEADER ELEMENTS INSTRUCTIONS
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
-  .header__heroBox--mainHeadingText > span {
-    font-size: 80%; }
-  .header__heroBox--subTitleText {
-    padding: 1.5rem;
-    background-image: linear-gradient(to right, #ffffff, #f2dae7); }
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 110%; }
+  .header__heroBox--mainHeading {
+    letter-spacing: .8rem;
+    font-weight: 600; }
+    .header__heroBox--mainHeading > span {
+      display: inline-block;
+      background-image: linear-gradient(to left, #ffffff, #f2dae7);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-size: 85%;
+      font-weight: 500; }
+  .header__heroBox--subText {
+    font-weight: 400;
+    padding-top: 3rem;
+    background-image: linear-gradient(to right, #f0f0ee 60%, #f279bb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 75%; }
 
 .header.ion-navicon {
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   float: right;
   display: none;
@@ -178,7 +186,7 @@ HEADER ELEMENTS INSTRUCTIONS
 .header.ion-close {
   float: right;
   margin-right: 10px;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer; }
 
 .nav {
@@ -187,6 +195,8 @@ HEADER ELEMENTS INSTRUCTIONS
   float: right; }
   .nav__mainNav--mainNavItem {
     display: inline-block; }
+    .nav__mainNav--mainNavItem:not(:last-child) {
+      margin-right: 3.5rem; }
     .nav__mainNav--mainNavItem a:link,
     .nav__mainNav--mainNavItem a:visited {
       color: #f0f0ee;
@@ -195,10 +205,10 @@ HEADER ELEMENTS INSTRUCTIONS
       font-size: 80%;
       border-bottom: 2px solid transparent;
       transition: border-bottom 0.4s;
-      padding: 10px 10px;
       letter-spacing: 1.3px;
       word-spacing: 5px;
-      font-weight: 400; }
+      font-weight: 400;
+      padding-bottom: 1rem; }
     .nav__mainNav--mainNavItem a:hover,
     .nav__mainNav--mainNavItem a:active {
       border-bottom: 2px solid #f2dae7; }
@@ -215,53 +225,46 @@ HEADER ELEMENTS INSTRUCTIONS
 .sectionProjects {
   background-color: #f0f0ee;
   width: 100%;
-  height: 90rem;
+  height: 77.5rem;
   padding: 3rem;
   clip-path: polygon(0 0, 100% 6rem, 100% 100%, 0 100%); }
 
 .sectionPricing {
   background-color: #ffffff;
   width: 100%;
-  padding: 4rem auto;
-  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%); }
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+  padding-top: 10rem; }
 
 .sectionAbout {
   background-color: #f0f0ee;
   width: 100%;
   clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
-  margin-top: -5rem; }
+  margin-top: -5rem;
+  margin-bottom: 5rem;
+  padding-top: 7.5rem; }
 
 .sectionGlossary {
   background-color: #ffffff;
   clip-path: polygon(0 0, 100% 2.5%, 100% 100%, 0 100%);
-  width: 100%; }
+  width: 100%;
+  padding-top: 15rem; }
 
 .footer {
-  background-color: #333;
+  background-color: #360622;
   padding: 4rem; }
 
 .testIcon {
   color: orangered;
   margin-right: 10px; }
 
-.sectionProjects__header {
-  display: inline-block;
-  background-image: linear-gradient(to right, #AADDBB, #00a84b);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-size: 160%;
-  width: 40%;
-  margin: 4rem 30%; }
-  .sectionProjects__header-sub {
-    width: 50%;
-    margin: 2rem auto 6rem auto; }
-    .sectionProjects__header-sub > a {
-      display: inline-block;
-      background-image: linear-gradient(to right, #AADDBB, #00a84b);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent; }
+.sectionProjects--subText {
+  width: 50%;
+  margin: 3rem auto 8rem auto; }
+  .sectionProjects--subText > a {
+    background-image: linear-gradient(to left, #AADDBB, #00a84b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; }
 
 .cardWrapper {
   width: 100%;
@@ -282,7 +285,7 @@ HEADER ELEMENTS INSTRUCTIONS
     padding: 2rem;
     color: #000;
     border-radius: 7px;
-    border: 1px transparent #fff;
+    border: 1px transparent #ffffff;
     text-align: center;
     box-shadow: -10px -10px 20px #faf6f6 inset; }
     .card__side--front {
@@ -307,19 +310,13 @@ HEADER ELEMENTS INSTRUCTIONS
   .card:hover .card__side--back {
     transform: translatey(-40rem) rotatey(0); }
 
-.sectionGlossary__header {
-  display: inline-block;
-  background-image: linear-gradient(to right, #AADDBB, #00a84b);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-size: 160%;
-  margin-top: 10rem; }
-
 .glossary {
   display: flex;
   flex-flow: column;
-  padding: 5rem; }
+  padding: 5rem;
+  /************
+    Sticky Headings
+    *************/ }
   .glossary__item {
     display: inline-flex;
     justify-content: space-around;
@@ -332,46 +329,37 @@ HEADER ELEMENTS INSTRUCTIONS
     .glossary__item--term {
       flex: 0 0 20%;
       text-transform: capitalize;
-      margin-right: 4rem; }
+      padding-left: 1rem; }
     .glossary__item--helps {
       flex: 0 0 40%;
       margin-right: 4rem; }
       .glossary__item--helps > a {
-        color: #00a84b;
+        color: #f279bb;
         text-decoration: none; }
         .glossary__item--helps > a:hover {
           text-decoration: underline; }
     .glossary__item--meaning {
-      flex: 0 0 40%; }
+      flex: 0 0 40%;
+      padding-right: 1rem; }
       .glossary__item--meaning > a {
-        color: #00a84b;
+        color: #f279bb;
         text-decoration: none; }
         .glossary__item--meaning > a:hover {
           text-decoration: underline; }
-
-/************
-Sticky Headings
-*************/
-.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  font-size: 80%;
-  background-color: #AADDBB;
-  text-align: center;
-  padding: 1rem 7rem;
-  border-radius: 2rem; }
-
-.sectionPricing__header {
-  display: inline-block;
-  background-image: linear-gradient(to right, #AADDBB, #00a84b);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-size: 140%;
-  width: 60%;
-  margin: 4rem 20%; }
+    .glossary__item:nth-child(even) {
+      color: #00a84b; }
+  .glossary__sticky {
+    color: #881155 !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 80%;
+    background-color: #f2dae7;
+    text-align: center;
+    padding: 1rem 7rem;
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
+    opacity: .9; }
 
 .pricing {
   width: 100%;
@@ -384,7 +372,7 @@ Sticky Headings
     justify-content: space-between;
     border: 6px double #f279bb;
     border-radius: .3rem;
-    margin-bottom: 13rem; }
+    margin: 5rem auto 13rem; }
     .pricing__package--item {
       text-align: center; }
       .pricing__package--item > a {
@@ -399,27 +387,16 @@ Sticky Headings
     .pricing__package--price {
       justify-content: center;
       color: #00a84b;
-      font-size: 140%;
+      font-size: 120%;
       font-style: italic;
       border-top: 2px solid #f279bb;
       padding-top: 2rem;
       margin-top: 2rem;
       text-align: center; }
 
-.sectionAbout__header {
-  display: inline-block;
-  background-image: linear-gradient(to right, #AADDBB, #00a84b);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-size: 160%;
-  margin: 4rem 0 2rem 0;
-  text-align: center;
-  width: 100%; }
-
 .sectionAbout__container {
   width: 60%;
-  margin: 0 auto 8rem auto;
+  margin: 3.5rem auto 8rem;
   padding: 2rem;
   background-color: #ffffff;
   border-radius: .3rem;

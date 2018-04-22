@@ -1,36 +1,32 @@
 .nav {
     margin-right: 2rem;
     margin-top: 2rem;
-    float:right;
-
+    float: right;
     &__mainNav {
-        
-
         &--mainNavItem {
+            display: inline-block;
 
-           display: inline-block;
-                          
+            &:not(:last-child) {
+                margin-right: 3.5rem;
+            }
+
             & a:link,
             & a:visited {
                 color: $colorOffwhite;
-            
                 text-decoration: none;
                 text-transform: uppercase;
                 font-size: 80%;
                 border-bottom: 2px solid transparent;
                 transition: border-bottom 0.4s;
-                padding: 10px 10px;
                 letter-spacing: 1.3px;
                 word-spacing: 5px;
                 font-weight: 400;
+                padding-bottom: 1rem;
             }
             & a:hover,
             & a:active {
-                border-bottom: 2px solid $colorTertiary-light;      
+                border-bottom: 2px solid $colorTertiary-light;
             }
         }
     }
 }
-
-
-

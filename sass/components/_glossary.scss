@@ -1,41 +1,40 @@
-.sectionGlossary__header {
-    @include clipTextDark;
-    font-size: 160%;
-    margin-top: 10rem;   
-}
-
 .glossary {
     display: flex;
     flex-flow: column;
     padding: 5rem;
-
     &__item {
         display: inline-flex;
         justify-content: space-around;
         align-items: flex-start;
         padding: 2rem;
-        
+
         &-firstRow {
             font-weight: 700;
             font-size: 110%;
             color: $colorTertiary-dark;
         }
-
-
         &--term {
             flex: 0 0 20%;
             text-transform: capitalize;
-            margin-right: 4rem;
-
-           
+            padding-left: 1rem;
         }
-
         &--helps {
             flex: 0 0 40%;
             margin-right: 4rem;
+            &>a {
+                color: $colorTertiary;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        &--meaning {
+            flex: 0 0 40%;
+            padding-right: 1rem;
 
-            & > a {
-                color: $colorPrimary-dark;
+            &>a {
+                color: $colorTertiary;
                 text-decoration: none;
                 &:hover {
                     text-decoration: underline;
@@ -43,37 +42,27 @@
             }
         }
 
-        &--meaning {
-            flex: 0 0 40%;  
+        &:nth-child(even) {
+            color: $colorPrimary-dark;
 
-            & > a {
-                color: $colorPrimary-dark;
-                text-decoration: none;
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
+
         }
     }
+    /************
+    Sticky Headings
+    *************/
+
+    &__sticky {
+        color: $colorTertiary-dark !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        font-size: 80%;
+        background-color: $colorTertiary-light;
+        text-align: center;
+        padding: 1rem 7rem;
+        clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
+        opacity: .9;
+    }
 }
-
-/************
-Sticky Headings
-*************/
-
-.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    font-size: 80%;
-    background-color: $colorPrimary-light;
-    text-align: center;
-    padding: 1rem 7rem;
-    border-radius: 2rem;
-
-
-}
-
-
-
