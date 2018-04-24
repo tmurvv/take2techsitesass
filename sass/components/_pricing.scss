@@ -1,6 +1,7 @@
 .pricing {
     width: 100%;
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     
     &__package {
@@ -10,8 +11,10 @@
         justify-content: space-between;
         border: 6px double $colorTertiary;
         border-radius: .3rem;
-        margin: 5rem auto 13rem;
-       
+        margin: 3.5rem auto 3rem;
+        &:last-child {
+            margin-bottom: 13rem;
+        }
 
         &--item {
             text-align: center;

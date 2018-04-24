@@ -5,24 +5,38 @@
         &>a {
             @include clipTextDarkRev;
         }
+
+        @include respond(landscape) {
+            width: 60%;
+        }   
     }
 }
 
-
 .cardWrapper {
     width: 100%;
-    display: inline-flex;
+    display: flex;
     justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+
 }
+
 .card {
     perspective: 150rem;
     -moz-perspective: 150rem;
+    height: 40rem;
+    width: 32rem;
+    margin-bottom: 4rem;
+
+
     &__side {
         display: flex;
         flex-flow: column;
-        justify-content: space-between;
-        width: 32rem;
+        justify-content: space-between; 
+        width: 100%;
         height: 40rem;
+        position: relative;
         transition: all 0.8s ease;
         backface-visibility: hidden;
         padding: 2rem;
@@ -33,63 +47,52 @@
         box-shadow: -10px -10px 20px #faf6f6 inset;
         &--front {
             background-color: $colorTertiary;
-            &-imgContainer {
-                width: 23rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            &-imgContainer1 {
+                width: 73%;
+                margin: 3rem auto 2rem;
             }
+
+            &-imgContainer2 {
+                width: 83%;
+                height: 44%;
+                margin: 3rem auto 2rem;
+            }  
+
+            &-imgContainer3 {
+                width: 73%;
+                margin: 3rem auto 2rem;
+            }
+
             &-img {
-                width: 23rem;
-                height: 18rem;
-                margin: 2rem;
+                width: 100%;
+                height: 100%;
             }
+
         }
-    
         &--back {
             background-color: $colorTertiary-dark;
+            position: absolute;
+            top: 0;
+            left: 0;
             transform: rotateY(180deg);
             color: $colorWhite;
+
             &>.o-list {
-                margin-top: 1rem;
+                margin: 2rem;
                 text-decoration: underline;
                 font-size: 80%;
                 text-transform: capitalize;
-            } // transform: rotateX(-180deg);
-            // height: 35rem;
-            // width: 25rem;
-            // padding: 2rem;
-            // color: $colorBlack;
-            // text-decoration: none;
-            // border-radius: 7px;
-            // border: 1px transparent #fff;
-            // transition: all 0.8s, border 0.4s, color 0.4s;
-            // text-align: center;
-            // box-shadow: -10px -10px 20px #faf6f6 inset;
-            // background-color: $colorTertiary;
-            // margin-bottom: 30px;   
-            // &:hover,
-            // &:active {
-            //     // background-color: $colorTertiary-dark;
-            //     // color: $colorWhite;
-            //     // border: 1px solid $colorPrimary;
-            //     transform: rotateX(0);
+            } 
         }
     }
     &:hover &__side--front {
-        transform: rotatey(180deg);
+        transform: rotatey(-180deg);
     }
     &:hover &__side--back {
-        transform: translatey(-40rem) rotatey(0);
-    }
-    &__front2 {
-        // margin-top: 2.5rem;
-        // background-image: url(../img/mySiteScreenShot.png);
-        // background-position: center;
-        // background-size: 22rem;
-        // background-repeat: no-repeat;
-    }
-    &__front3 {
-        // background-image: url(../img/underconstruction2mytint.gif);
-        // background-position: center 80px;
-        // background-size: 20rem;
-        // background-repeat: no-repeat;
+        transform: rotatey(0);
     }
 }

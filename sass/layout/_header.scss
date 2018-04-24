@@ -18,7 +18,8 @@ HEADER ELEMENTS INSTRUCTIONS
     &__heroBox {
         @include centerBoxAbs;
         text-align: center;
-        font-size: 110%;
+        width: 100%;
+        //see o-headingPrimary in _typography for other font info    
 
         &--mainHeading {
             letter-spacing: .8rem;

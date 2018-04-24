@@ -8,6 +8,10 @@
         border-radius: .3rem;
         box-shadow: -8px -8px 20px $colorTertiary inset;
   
+        @include respond(landscape) {
+            width: 75%;
+        }
+    
         &--imgCont {
             height: 15rem;
             width: 15rem;

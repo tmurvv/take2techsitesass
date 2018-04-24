@@ -2,25 +2,61 @@
     display: flex;
     flex-flow: column;
     padding: 5rem;
+
+    @include respond(portrait) {
+        padding: 2rem;
+        font-size: 80%;
+    }
+
     &__item {
         display: inline-flex;
         justify-content: space-around;
         align-items: flex-start;
         padding: 2rem;
 
+        @include respond(portrait) {
+            padding-left: 3rem;
+            margin-right: 0;
+            display: block;
+            text-align: left;   
+    
+
+
+        }
+
         &-firstRow {
             font-weight: 700;
             font-size: 110%;
             color: $colorTertiary-dark;
+
+            @include respond(portrait) {
+                display: none;
+
+            }
         }
+
         &--term {
             flex: 0 0 20%;
             text-transform: capitalize;
             padding-left: 1rem;
+            @include respond(portrait) {
+                padding-left: 0rem;
+                border-bottom: .5rem double $colorTertiary-dark;
+                font-size: 125%; 
+            }
         }
+
         &--helps {
+            
             flex: 0 0 40%;
             margin-right: 4rem;
+
+            @include respond(portrait) {
+                padding-right: 1rem;
+                border-bottom: .1rem dashed $colorTertiary-dark;
+                padding-bottom: .5rem;
+            }
+
             &>a {
                 color: $colorTertiary;
                 text-decoration: none;
@@ -32,6 +68,11 @@
         &--meaning {
             flex: 0 0 40%;
             padding-right: 1rem;
+            @include respond(portrait) {
+                display: inline;
+                padding-top: .5rem;              
+            }
+            
 
             &>a {
                 color: $colorTertiary;
@@ -64,5 +105,9 @@
         padding: 1rem 7rem;
         clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
         opacity: .9;
+
+        @include respond(portrait) {
+            display: none;
+        }
     }
 }
