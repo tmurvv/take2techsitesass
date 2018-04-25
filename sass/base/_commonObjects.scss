@@ -2,6 +2,7 @@
     margin: 1rem;
     padding: 1rem 1.25rem;
     border-radius: .5rem;
+    &:focus {outline:0;}
 }
 
 .o-list {

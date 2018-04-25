@@ -1,5 +1,5 @@
 .u-hideItem {
-  display: none; }
+  display: none !important; }
 
 * {
   margin: 0;
@@ -38,8 +38,7 @@ a:visited {
   font-size: 4rem;
   font-weight: 400;
   display: inline-block;
-  display: inline-block;
-  background-image: linear-gradient(to right, #ffffff, #f2dae7);
+  background-image: linear-gradient(to right, #faebd7 40%, #7c184e);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -55,7 +54,7 @@ a:visited {
 
 .o-headingSecondary {
   display: inline-block;
-  background-image: linear-gradient(to right, #AADDBB, #00a84b);
+  background-image: linear-gradient(to right, #7bccc2, #4c7571);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -73,7 +72,7 @@ a:visited {
 
 h4 {
   text-align: center;
-  color: #881155; }
+  color: #7c184e; }
 
 .u-underline {
   text-decoration: underline; }
@@ -82,6 +81,8 @@ h4 {
   margin: 1rem;
   padding: 1rem 1.25rem;
   border-radius: .5rem; }
+  .o-btn:focus {
+    outline: 0; }
 
 .o-list {
   list-style: none;
@@ -185,8 +186,7 @@ HEADER ELEMENTS INSTRUCTIONS
     letter-spacing: .8rem;
     font-weight: 600; }
     .header__heroBox--mainHeading > span {
-      display: inline-block;
-      background-image: linear-gradient(to left, #ffffff, #f2dae7);
+      background-image: linear-gradient(to right, #7c184e, #faebd7 60%);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
@@ -195,7 +195,7 @@ HEADER ELEMENTS INSTRUCTIONS
   .header__heroBox--subText {
     font-weight: 400;
     padding-top: 3rem;
-    background-image: linear-gradient(to right, #f0f0ee 60%, #f279bb);
+    background-image: linear-gradient(to right, #faebd7 40%, #7c184e);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -233,7 +233,7 @@ HEADER ELEMENTS INSTRUCTIONS
         margin-right: 3.5rem; }
       .nav__mainNav--Item a:link,
       .nav__mainNav--Item a:visited {
-        color: #f0f0ee;
+        color: #faebd7;
         text-decoration: none;
         text-transform: uppercase;
         font-size: 80%;
@@ -254,7 +254,7 @@ HEADER ELEMENTS INSTRUCTIONS
           line-height: 1; } }
       .nav__mainNav--Item a:hover,
       .nav__mainNav--Item a:active {
-        border-bottom: 2px solid #f2dae7; }
+        border-bottom: 2px solid #faebd7; }
   .nav__mobileNav--icon {
     cursor: pointer;
     display: none;
@@ -272,7 +272,7 @@ HEADER ELEMENTS INSTRUCTIONS
       border-radius: .3rem; }
 
 .header {
-  background-image: linear-gradient(to right bottom, rgba(170, 221, 187, 0.8), rgba(0, 168, 75, 0.8)), url(../img/valleyTenPeaks.jpg);
+  background-image: linear-gradient(to right bottom, rgba(223, 255, 253, 0.8), rgba(76, 117, 113, 0.8)), url(../img/valleyTenPeaks.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -312,15 +312,15 @@ HEADER ELEMENTS INSTRUCTIONS
 .sectionGlossary {
   background-color: #ffffff;
   width: 100%;
-  padding-top: 15rem;
-  clip-path: polygon(0 0, 100% 2.5%, 100% 100%, 0 100%); }
+  padding-top: 10rem;
+  clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 100%); }
   @media only screen and (max-width: 28em) {
     .sectionGlossary {
       padding-top: 6rem;
       clip-path: polygon(0 0, 100% 0.5%, 100% 100%, 0 100%); } }
 
 .footer {
-  background-color: #360622;
+  background-color: #310a20;
   padding: 4rem; }
 
 .testIcon {
@@ -331,13 +331,13 @@ HEADER ELEMENTS INSTRUCTIONS
   width: 50%;
   margin: 3rem auto 8rem auto; }
   .sectionProjects--subText > a {
-    background-image: linear-gradient(to left, #AADDBB, #00a84b);
+    background-image: linear-gradient(to left, #4c7571, #7bccc2);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; }
     @media only screen and (max-width: 28em) {
       .sectionProjects--subText > a {
-        color: #00a84b;
+        color: #4c7571;
         text-decoration: none;
         background-image: none;
         -webkit-background-clip: initial;
@@ -374,31 +374,34 @@ HEADER ELEMENTS INSTRUCTIONS
     transition: all 0.8s ease;
     backface-visibility: hidden;
     padding: 2rem;
-    color: #000;
+    color: #ffffff;
     border-radius: 7px;
     border: 1px transparent #ffffff;
     text-align: center;
-    box-shadow: -10px -10px 20px #faf6f6 inset; }
+    box-shadow: -10px -10px 20px #faebd7 inset; }
     .card__side--front {
-      background-color: #f279bb;
+      background-color: #ec3093;
       position: absolute;
       top: 0;
-      left: 0; }
+      left: 0;
+      padding-bottom: 4rem;
+      padding-top: 4rem; }
       .card__side--front-imgContainer1 {
         width: 73%;
-        margin: 3rem auto 2rem; }
+        margin: 3rem auto 1rem; }
       .card__side--front-imgContainer2 {
         width: 83%;
-        height: 44%;
-        margin: 3rem auto 2rem; }
+        height: 50%;
+        margin: 1rem auto 1rem; }
       .card__side--front-imgContainer3 {
-        width: 73%;
-        margin: 3rem auto 2rem; }
+        width: 77%;
+        height: 55%;
+        margin: 3rem auto 1rem; }
       .card__side--front-img {
         width: 100%;
         height: 100%; }
     .card__side--back {
-      background-color: #881155;
+      background-color: #7c184e;
       position: absolute;
       top: 0;
       left: 0;
@@ -406,18 +409,50 @@ HEADER ELEMENTS INSTRUCTIONS
       color: #ffffff; }
       .card__side--back > .o-list {
         margin: 2rem;
-        text-decoration: underline;
+        text-decoration: none;
         font-size: 80%;
         text-transform: capitalize; }
+        .card__side--back > .o-list > li > a:link,
+        .card__side--back > .o-list > li > a:visited {
+          text-decoration: none; }
+        .card__side--back > .o-list > li > a:hover,
+        .card__side--back > .o-list > li > a:active {
+          color: #faebd7; }
+      .card__side--back-btn {
+        width: 90%;
+        margin: 0 auto 2rem;
+        background-color: #ccc;
+        border-radius: .3rem;
+        box-shadow: 1px 2px #777;
+        border-bottom: 1.5rem; }
+        .card__side--back-btn a {
+          color: #000;
+          text-decoration: none;
+          font-family: 'Lato', 'Arial', san-serif;
+          font-size: 1.5rem;
+          font-weight: 400; }
   .card:hover .card__side--front {
     transform: rotatey(-180deg); }
   .card:hover .card__side--back {
     transform: rotatey(0); }
 
+.sectionGlossary__viewBtnCont {
+  width: 100%; }
+  .sectionGlossary__viewBtnCont--viewBtn {
+    margin-left: 50%;
+    margin-top: 6rem;
+    transform: translate(-50%, -50%);
+    font-size: 120%;
+    font-weight: 300;
+    background-color: transparent;
+    color: #7c184e;
+    padding: 2rem 4rem;
+    border: none;
+    cursor: pointer; }
+
 .glossary {
-  display: flex;
   flex-flow: column;
-  padding: 5rem;
+  padding: 0 5rem 5rem 5rem;
   /************
     Sticky Headings
     *************/ }
@@ -430,7 +465,7 @@ HEADER ELEMENTS INSTRUCTIONS
       padding: 1rem;
       font-size: 70%; } }
   .glossary__item {
-    display: inline-flex;
+    display: flex;
     justify-content: space-around;
     align-items: flex-start;
     padding: 2rem; }
@@ -443,18 +478,19 @@ HEADER ELEMENTS INSTRUCTIONS
     .glossary__item-firstRow {
       font-weight: 700;
       font-size: 110%;
-      color: #881155; }
+      color: #7c184e; }
       @media only screen and (max-width: 56.25em) {
         .glossary__item-firstRow {
           display: none; } }
     .glossary__item--term {
       flex: 0 0 20%;
       text-transform: capitalize;
-      padding-left: 1rem; }
+      padding-left: 1rem;
+      padding-right: 2rem; }
       @media only screen and (max-width: 56.25em) {
         .glossary__item--term {
           padding-left: 0rem;
-          border-bottom: 0.5rem double #881155;
+          border-bottom: 0.5rem double #7c184e;
           font-size: 125%; } }
     .glossary__item--helps {
       flex: 0 0 40%;
@@ -462,10 +498,10 @@ HEADER ELEMENTS INSTRUCTIONS
       @media only screen and (max-width: 56.25em) {
         .glossary__item--helps {
           padding-right: 1rem;
-          border-bottom: 0.1rem dashed #881155;
+          border-bottom: 0.1rem dashed #7c184e;
           padding-bottom: .5rem; } }
       .glossary__item--helps > a {
-        color: #f279bb;
+        color: #ec3093;
         text-decoration: none; }
         .glossary__item--helps > a:hover {
           text-decoration: underline; }
@@ -477,20 +513,20 @@ HEADER ELEMENTS INSTRUCTIONS
           display: inline;
           padding-top: .5rem; } }
       .glossary__item--meaning > a {
-        color: #f279bb;
+        color: #ec3093;
         text-decoration: none; }
         .glossary__item--meaning > a:hover {
           text-decoration: underline; }
     .glossary__item:nth-child(even) {
-      color: #00a84b; }
+      color: #4c7571; }
   .glossary__sticky {
-    color: #881155 !important;
+    color: #7c184e !important;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     font-size: 80%;
-    background-color: #f2dae7;
+    background-color: #7bccc2;
     text-align: center;
     padding: 1rem 7rem;
     clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
@@ -509,9 +545,9 @@ HEADER ELEMENTS INSTRUCTIONS
     flex-flow: column;
     padding: 2rem 3rem;
     justify-content: space-between;
-    border: 6px double #f279bb;
+    border: 6px double #4c7571;
     border-radius: .3rem;
-    margin: 3.5rem auto 3rem; }
+    margin: 3.5rem auto 12rem; }
     @media only screen and (max-width: 56.25em) {
       .pricing__package {
         margin: 3.5rem auto 8rem; } }
@@ -523,20 +559,20 @@ HEADER ELEMENTS INSTRUCTIONS
     .pricing__package--item {
       text-align: center; }
       .pricing__package--item > a {
-        color: #00a84b;
+        color: #4c7571;
         text-decoration: none; }
         .pricing__package--item > a:hover {
           text-decoration: underline; }
       .pricing__package--item-line1 {
-        border-bottom: 2px solid #f279bb;
+        border-bottom: 2px solid #ec3093;
         padding-bottom: 2rem;
         margin-bottom: 2rem; }
     .pricing__package--price {
       justify-content: center;
-      color: #00a84b;
+      color: #4c7571;
       font-size: 120%;
       font-style: italic;
-      border-top: 2px solid #f279bb;
+      border-top: 2px solid #ec3093;
       padding-top: 2rem;
       margin-top: 2rem;
       text-align: center; }
@@ -547,7 +583,7 @@ HEADER ELEMENTS INSTRUCTIONS
   padding: 2rem;
   background-color: #ffffff;
   border-radius: .3rem;
-  box-shadow: -8px -8px 20px #f279bb inset; }
+  box-shadow: -8px -8px 20px #ec3093 inset; }
   @media only screen and (max-width: 75em) {
     .sectionAbout__container {
       width: 75%; } }
@@ -569,7 +605,7 @@ HEADER ELEMENTS INSTRUCTIONS
       .sectionAbout__container--content {
         font-size: 65%; } }
     .sectionAbout__container--content > a {
-      color: #f279bb; }
+      color: #ec3093; }
 
 .sectionAbout__content--imgCont-img {
   height: 140%;

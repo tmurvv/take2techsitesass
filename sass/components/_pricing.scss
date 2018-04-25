@@ -8,9 +8,11 @@
         flex-flow: column;
         padding: 2rem 3rem;
         justify-content: space-between;
-        border: 6px double $colorTertiary;
+        border: 6px double $colorPrimary-dark;
+
         border-radius: .3rem;
-        margin: 3.5rem auto 3rem;
+        margin: 3.5rem auto 12rem;
+
         @include respond(portrait) {
             margin: 3.5rem auto 8rem;
         }

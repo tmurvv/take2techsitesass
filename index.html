@@ -23,13 +23,15 @@
 
         <div class="header__topLineWrapper">
             <div class="header__logoBox">
-                <img src="img/logolavender.gif" alt="TechSchool Logo" class="header__logoBox--logo">
+                <img src="img/logoLightYellow.gif" alt="TechSchool Logo" class="header__logoBox--logo">
             </div>
 
             <div class="nav">
                 <ul class="nav__mainNav js--main-nav">
                     <li class="nav__mainNav--Item">
-                        <span><a href="#projects">View projects</a></span>
+                        <span>
+                            <a href="#projects">View projects</a>
+                        </span>
                     </li>
 
                     <li class="nav__mainNav--Item">
@@ -46,9 +48,13 @@
 
                 </ul>
 
-                <div class="nav__mobileNav" id = "js--nav__mobileNav">
-                    <a class="nav__mobileNav--icon js--nav__mobileNav--icon"><img src="img/hamburger.png" alt="menu icon" class="nav__mobileNav--icon-hamburger"></a>
-                    <a class="nav__mobileNav--icon js--nav__mobileNav--icon"><img src="img/Close.png" alt="menu icon" class="nav__mobileNav--icon-close"></a>
+                <div class="nav__mobileNav" id="js--nav__mobileNav">
+                    <a class="nav__mobileNav--icon js--nav__mobileNav--icon">
+                        <img src="img/hamburger.png" alt="menu icon" class="nav__mobileNav--icon-hamburger">
+                    </a>
+                    <a class="nav__mobileNav--icon js--nav__mobileNav--icon">
+                        <img src="img/Close.png" alt="menu icon" class="nav__mobileNav--icon-close">
+                    </a>
                 </div>
 
             </div>
@@ -70,7 +76,7 @@
         </div>
     </header>
     <section class="sectionProjects" id="projects">
-        
+
         <div class="o-centerHeading">
             <h2 class="o-headingSecondary">Sample Projects</h2>
         </div>
@@ -88,22 +94,35 @@
                         <img class="card__side--front-img" alt="Grad Survey Landing Page" src="../img/GradSurveyScreenShot.png">
                     </div>
 
-                    <p>Hover for technical details</p>
-                    <button type="button" class="o-btn">Visit Site</button>
+                    <p>Hover for technical details<br>or to view website.</p>
+
                 </div>
 
                 <div class="card__side card__side--back">
                     Grad Survey Form
                     <br> Technical Specs
                     <ul class="o-list">
-                        <li><a href="#mobileFriendly">mobile friendly</a></li>
-                        <li><a href="#responsivePhotos">responsive images</a></li>
-                        <li><a href="#js">javascript</a>/<a href="#php">PHP</a></li>
+                        <li>
+                            <a href="#mobileFriendly">mobile friendly</a>
+                        </li>
+                        <li>
+                            <a href="#responsivePhotos">responsive images</a>
+                        </li>
+                        <li>
+                            <a href="#js">javascript</a>/
+                            <a href="#php">PHP</a>
+                        </li>
                         <li>html forms</li>
-                        <li><a href="#seo">search engine optimization</a></li>
-                        <li><a href="#performance">performance optimization</a></li>
+                        <li>
+                            <a href="#seo">search engine optimization</a>
+                        </li>
+                        <li>
+                            <a href="#performance">performance optimization</a>
+                        </li>
                     </ul>
-                    <button type="button" class="o-btn">Visit Site</button>
+                    <div class="card__side--back-btn">
+                        <a href="InnoGradSurvey/gradindex.html" target="_blank">Visit Site</a>
+                    </div>
                 </div>
             </div>
             <div class="card">
@@ -114,8 +133,8 @@
                         <img class="card__side--front-img" alt="Grad Survey Landing Page" src="../img/mySiteScreenShot.png">
                     </div>
 
-                    <p>Hover for technical details</p>
-                    <button type="button" class="o-btn">Visit Site</button>
+                    <p>Hover for technical details<br>or to view website.</p>
+                   
                 </div>
 
                 <div class="card__side card__side--back">
@@ -141,7 +160,9 @@
                             <a href="#node">Node build process</a>
                         </li>
                     </ul>
-                    <button type="button" class="o-btn">Visit Site</button>
+                    <div class="card__side--back-btn">
+                        <a href="#top">Visit Site</a>
+                    </div>
                 </div>
             </div>
             <div class="card">
@@ -152,8 +173,8 @@
                         <img class="card__side--front-img" alt="Grad Survey Landing Page" src="../img/underconstruction2mytint.gif">
                     </div>
 
-                    <p>Hover for technical details</p>
-                    <button type="button" class="o-btn">Visit Site</button>
+                    <p>Hover for technical details<br>or to view website.</p>
+                    
                 </div>
 
                 <div class="card__side card__side--back">
@@ -181,11 +202,11 @@
                         </li>
 
                     </ul>
-                    <button type="button" class="o-btn">Visit Site</button>
+                    <div class="card__side--back-btn">
+                        <a href="#">Visit Site</a>
+                    </div>
                 </div>
             </div>
-            <!-- <a class="card card__front2 " href="#top">This site</a>
-            <a class="card card__front3 " href="# ">Teaching Tools Site</a> -->
         </div>
     </section>
     <section class="sectionPricing" id="pricing">
@@ -231,7 +252,10 @@
     </section>
     <section class="sectionAbout" id="about">
         <div class="o-centerHeading">
-            <h2 class="o-headingSecondary">About <i class="ion-navicon"></i></div></h2>
+            <h2 class="o-headingSecondary">About
+                <i class="ion-navicon"></i>
+        </div>
+        </h2>
         </div>
         <div class="sectionAbout__container">
             <!-- .story-->
@@ -254,7 +278,10 @@
         <div class="o-centerHeading">
             <h2 class="o-headingSecondary">Glossary of Technical Terms</h2>
         </div>
-        <div class="glossary">
+        <div class="sectionGlossary__viewBtnCont">
+            <button type="button" class="o-btn sectionGlossary__viewBtnCont--viewBtn js--sectionGlossary__viewBtnCont--viewBtn">Show/Hide Glossary</button>
+        </div>
+        <div class="glossary u-hideItem">
             <div class="glossary__item glossary__item-firstRow" id="mobileFriendly">
                 <div class="glossary__item--term">
                     <span class="u-underline">Specification</span>
@@ -293,16 +320,16 @@
             <div class="glossary__item" id="seo">
                 <div class="glossary__item--term">mobile friendly</div>
                 <div class="glossary__item--helps">Creates better usuability for your website visitor.</div>
-                <div class="glossary__item--meaning">A Mobile Friendly website looks great on any size screen from phone to computer. 
-                    Also known as "responsive design."</div>
+                <div class="glossary__item--meaning">A Mobile Friendly website looks great on any size screen from phone to computer. Also known as "responsive
+                    design."</div>
 
             </div>
 
             <div class="glossary__item" id="performance">
                 <div class="glossary__item--term">Search Engine Optimization</div>
                 <div class="glossary__item--helps">Creates better visibility for your website.</div>
-                <div class="glossary__item--meaning">Search Engine Optimization (SEO) makes your site more receptive to 
-                    search engines crawlers and therefore raises your position in searches on sites such as Google or Bing.</div>
+                <div class="glossary__item--meaning">Search Engine Optimization (SEO) makes your site more receptive to search engines crawlers and therefore
+                    raises your position in searches on sites such as Google or Bing.</div>
 
             </div>
             <div class="glossary__item" id="responsivePhotos">
@@ -320,24 +347,24 @@
             <div class="glossary__item" id="bem">
                 <div class="glossary__item--term">Git version control</div>
                 <div class="glossary__item--helps">Your safety net! Reduces downtime.</div>
-                <div class="glossary__item--meaning">Version control is offsite storage of website files in all stages of production.
-                    In case of catastrophic failure, there is always a working version of your website to fall back on.
+                <div class="glossary__item--meaning">Version control is offsite storage of website files in all stages of production. In case of catastrophic
+                    failure, there is always a working version of your website to fall back on.
                 </div>
             </div>
 
             <div class="glossary__item" id="advcss">
                 <div class="glossary__item--term">BEM naming</div>
                 <div class="glossary__item--helps">Saves you time and money when a new developer is updating the website.</div>
-                <div class="glossary__item--meaning">Block, Element, Modifier (BEM) is a strategy for naming items that fosters 
-                    clarity. With BEM the developer can quickly find the place to implement a bug-fix or feature upgrade.</div>
+                <div class="glossary__item--meaning">Block, Element, Modifier (BEM) is a strategy for naming items that fosters clarity. With BEM the developer
+                    can quickly find the place to implement a bug-fix or feature upgrade.</div>
             </div>
 
             <div class="glossary__item" id="architechture">
                 <div class="glossary__item--term">Advanced CSS</div>
                 <div class="glossary__item--helps">Improves
                     <a href="#conversion">conversion rates</a> and user interaction by moving screen elements to create emphasis.</div>
-                <div class="glossary__item--meaning">CSS or Cascading Style Sheets is a language used to define visual appearance and 
-                    formatting of websites. Advanced CSS introduces moving elements and additional effects to increase 
+                <div class="glossary__item--meaning">CSS or Cascading Style Sheets is a language used to define visual appearance and formatting of websites.
+                    Advanced CSS introduces moving elements and additional effects to increase
                     <a href="#conversion">conversion rates</a>.</div>
             </div>
 
@@ -345,8 +372,8 @@
                 <div class="glossary__item--term">7-1 Architechture</div>
                 <div class="glossary__item--helps">Saves the developer and the client time and money during initial development, upkeep, and future updates.
                 </div>
-                <div class="glossary__item--meaning">7-1 architechture is a standardized way to organize larger projects by splitting the code into seven "categories" that can be
-                    easily navigated at scale.</div>
+                <div class="glossary__item--meaning">7-1 architechture is a standardized way to organize larger projects by splitting the code into seven "categories"
+                    that can be easily navigated at scale.</div>
             </div>
 
             <div class="glossary__item" id="js">
@@ -361,30 +388,34 @@
                 <div class="glossary__item--term">Javascript computer language</div>
                 <div class="glossary__item--helps">Gives you more options for responses and information from your customers.
                 </div>
-                <div class="glossary__item--meaning">Alongside HTML and CSS, JavaScript is one of the three core technologies of the World Wide Web. 
-                        It enables the website to respond to user inputs such as button clicks, scrolls, and submissions.
-                        The vast majority of websites use it, and all major web browsers have a dedicated JavaScript "engine" to execute it<sub>wiki</sub>.</div>
+                <div class="glossary__item--meaning">Alongside HTML and CSS, JavaScript is one of the three core technologies of the World Wide Web. It enables
+                    the website to respond to user inputs such as button clicks, scrolls, and submissions. The vast majority
+                    of websites use it, and all major web browsers have a dedicated JavaScript "engine" to execute it
+                    <sub>wiki</sub>.</div>
             </div>
 
             <div class="glossary__item" id="sass">
                 <div class="glossary__item--term">PHP computer language</div>
                 <div class="glossary__item--helps">Used to interact with forum posts and e-mails, etc.</div>
-                <div class="glossary__item--meaning">PHP is a server-side scripting language designed for web development <sub>wiki</sub>.</div>
+                <div class="glossary__item--meaning">PHP is a server-side scripting language designed for web development
+                    <sub>wiki</sub>.</div>
             </div>
 
             <div class="glossary__item" id="node">
                 <div class="glossary__item--term">Sass preprocessor</div>
                 <div class="glossary__item--helps">Saves you time and money by reducing repetitive entries from the developer.</div>
-                <div class="glossary__item--meaning">Sass is one of a class of tools called CSS preprocessors. 
-                    Preprocessors help us code more efficiently by adding special features into normal CSS, such as variables, 
-                    nested rules, code groupings (mixins), and more<sub>www.learnhowtoprogram.com</sub>.</div>
+                <div class="glossary__item--meaning">Sass is one of a class of tools called CSS preprocessors. Preprocessors help us code more efficiently by
+                    adding special features into normal CSS, such as variables, nested rules, code groupings (mixins), and
+                    more
+                    <sub>www.learnhowtoprogram.com</sub>.</div>
             </div>
 
             <div class="glossary__item" id="">
                 <div class="glossary__item--term">Node Build Process</div>
                 <div class="glossary__item--helps">Reduces downtime by automating the final stage of website programming.</div>
-                <div class="glossary__item--meaning">Build tools are programs that automate the creation of executable applications from source code. 
-                    Building incorporates compiling, linking, and packaging the code into a usable or executable form<sub>techopedia.com</sub>.</div>
+                <div class="glossary__item--meaning">Build tools are programs that automate the creation of executable applications from source code. Building
+                    incorporates compiling, linking, and packaging the code into a usable or executable form
+                    <sub>techopedia.com</sub>.</div>
             </div>
         </div>
     </section>
@@ -401,7 +432,7 @@
             <div class="footer__menuContainer--social">
                 <a href="https://www.linkedin.com/in/tisha-murvihill-tech" target="_blank" class="footer__menuContainer--social-item">
                     <!-- <img src="../img/linkedin.jpg" class="footer__menuContainer--social-item-img"> -->
-                    
+
                 </a>
                 <i class="ion-social-linkedin footer__menuContainer--social-item-icon"></i>
 

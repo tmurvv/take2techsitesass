@@ -34,7 +34,7 @@ HEADER ELEMENTS INSTRUCTIONS
             font-weight: 600;
 
             &>span {
-                @include clipTextLightRev;
+                @include clipTextTertiaryRev;
                 font-size: 85%;
                 font-weight: 500;
             }

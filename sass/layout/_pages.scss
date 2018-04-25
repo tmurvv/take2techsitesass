@@ -44,8 +44,8 @@
 .sectionGlossary {
     background-color: $colorWhite;   
     width: 100%;
-    padding-top: 15rem;
-    clip-path: polygon(0 0, 100% 2.5%, 100% 100%, 0 100%);
+    padding-top: 10rem;
+    clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 100%);
 
     @include respond(smallPhone) {
         padding-top: 6rem;
@@ -54,6 +54,7 @@
 }
 
 .footer {
-    background-color: #360622;
+    background-color: #310a20;
     padding: 4rem;
+
 }

@@ -30,21 +30,26 @@
 }
 
 @mixin clipTextDark {
-    background-image: linear-gradient(to right, $colorPrimary-light, $colorPrimary-dark);
+    background-image: linear-gradient(to right, $colorPrimary, $colorPrimary-dark);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
-
 @mixin clipTextDarkRev {
-    background-image: linear-gradient(to left, $colorPrimary-light, $colorPrimary-dark);
+    background-image: linear-gradient(to left, $colorPrimary-dark, $colorPrimary);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
 
 @mixin clipTextTertiary {
-    background-image: linear-gradient(to right, $colorOffwhite 60%, $colorTertiary);
+    background-image: linear-gradient(to right, $colorSecondary 40%, $colorTertiary-dark);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+@mixin clipTextTertiaryRev {
+    background-image: linear-gradient(to right, $colorTertiary-dark, $colorSecondary 60%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
