@@ -2,13 +2,17 @@
     margin-right: 2rem;
     margin-top: 2rem;
     float: right;
+    @include respond(portrait) {
+        float: left;
+    }
     &__mainNav {
+        list-style: none;
         @include respond(portrait) {
             display: none;
         }
-
-        &--mainNavItem {
+        &--Item {
             display: inline-block;
+           
             &:not(:last-child) {
                 margin-right: 3.5rem;
             }
@@ -24,7 +28,20 @@
                 word-spacing: 5px;
                 font-weight: 400;
                 padding-bottom: 1rem;
+
+                @include respond(portrait) {
+                    padding-bottom: 0;   
+                }
             }
+
+            @include respond(portrait) {
+                display: block;
+                padding-bottom: 0;
+                line-height: 1;
+
+            }
+
+
             & a:hover,
             & a:active {
                 border-bottom: 2px solid $colorTertiary-light;
@@ -32,34 +49,21 @@
         }
     }
     &__mobileNav--icon {
-        float: right;
-        cursor: pointer; 
+        cursor: pointer;
         display: none;
-
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
         @include respond(portrait) {
-            display: inline-block;           
+            display: block;
         }
-
         &-hamburger {
-            height: 2.5rem;
+            height: 3rem;
         }
-
         &-close {
             display: none;
-        } // position: fixed;
-        // top: 2rem;
-        // right: 2rem;
-        // @include respond(portrait) {
-        //     display: block;
-        // }
-        // &--icon {
-        //     height: 3rem;
-        //     border-radius: .3rem;
-        // }
-        // &--icon-close {
-        //     height: 1.5rem;
-        //     border-radius: .3rem;
-        //     float: right;
-        // }
+            height: 2rem;
+            border-radius: .3rem;
+        }
     }
 }

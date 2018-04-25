@@ -9,9 +9,17 @@ HEADER ELEMENTS INSTRUCTIONS
     &__logoBox {
         padding: 1rem;
         float: left;
+        border-radius: .3rem;
+
         &--logo {
             height: 10rem;
             opacity: .2;
+
+            @include respond(smallPhone) {
+                height: 6rem;
+                opacity: .1;
+
+            }
         }
     }
 

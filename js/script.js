@@ -14,6 +14,7 @@ $(document).ready(function () {
         var closeVis=$(".nav__mobileNav--icon-close:visible");
 
         mainNav.slideToggle(200);
+        mainNav.addClass("mainBlock")
 
         if ((hamburgerVis).length == 0) {
             hamburger.css("display", "block");

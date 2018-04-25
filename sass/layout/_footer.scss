@@ -5,6 +5,15 @@
         &--menu {
             &-item {
                 text-transform: uppercase;
+                @include respond(portrait) {
+                    display: block;
+                    font-size: 80%;
+                }
+
+                @include respond(smallPhone) {
+                    font-size: 60%;
+                }
+
                 &:link,
                 &:visited {
                     color: $colorOffwhite;
@@ -24,22 +33,21 @@
       
         &--social {
             &-item {
+                @include respond(portrait) {
+                    font-size: 80%;   
+                }
                 &:not(:last-child) {
                     margin-right: 4rem;
                 }
 
                 &:last-child {
-                     vertical-align: 18%;
-                     font-size: 90%;
-            
+                    //  vertical-align: 18%;
+                    //  font-size: 90%;
                 }
 
                 &-icon {
-                    font-size: 25rem;
-                    color: #fff;
-
-
-
+                    // font-size: 25rem;
+                    // color: #fff;
                 }
             }
         }
@@ -50,5 +58,15 @@
         color: $colorGrey-light3;
         font-size: 75%;
         margin-top: 2rem;
+
+        @include respond(phone) {
+            font-size: 65%;
+            width: 80%;
+            margin: 3rem auto 0;
+        }
+
+        @include respond(smallPhone) {
+            margin-top: .5rem;
+         }
     }
 }

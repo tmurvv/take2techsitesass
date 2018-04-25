@@ -4,11 +4,23 @@
         margin: 3rem auto 8rem auto;
         &>a {
             @include clipTextDarkRev;
+            @include respond(smallPhone) {
+                color: $colorPrimary-dark;
+                text-decoration: none;
+                background-image: none;
+                -webkit-background-clip: initial;
+                background-clip: initial;
+            }
         }
 
+        
         @include respond(landscape) {
             width: 60%;
-        }   
+        }
+        @include respond(phone) {
+            margin-bottom: 5rem;
+            font-size: 75%;
+        }
     }
 }
 
@@ -19,7 +31,6 @@
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     position: relative;
-
 }
 
 .card {
@@ -28,12 +39,10 @@
     height: 40rem;
     width: 32rem;
     margin-bottom: 4rem;
-
-
     &__side {
         display: flex;
         flex-flow: column;
-        justify-content: space-between; 
+        justify-content: space-between;
         width: 100%;
         height: 40rem;
         position: relative;
@@ -50,28 +59,23 @@
             position: absolute;
             top: 0;
             left: 0;
-
             &-imgContainer1 {
                 width: 73%;
                 margin: 3rem auto 2rem;
             }
-
             &-imgContainer2 {
                 width: 83%;
                 height: 44%;
                 margin: 3rem auto 2rem;
-            }  
-
+            }
             &-imgContainer3 {
                 width: 73%;
                 margin: 3rem auto 2rem;
             }
-
             &-img {
                 width: 100%;
                 height: 100%;
             }
-
         }
         &--back {
             background-color: $colorTertiary-dark;
@@ -80,13 +84,12 @@
             left: 0;
             transform: rotateY(180deg);
             color: $colorWhite;
-
             &>.o-list {
                 margin: 2rem;
                 text-decoration: underline;
                 font-size: 80%;
                 text-transform: capitalize;
-            } 
+            }
         }
     }
     &:hover &__side--front {

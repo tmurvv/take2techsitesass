@@ -46,6 +46,9 @@ a:visited {
   color: transparent;
   letter-spacing: .2rem;
   transition: all .2s; }
+  @media only screen and (max-width: 28em) {
+    .o-headingPrimary {
+      font-size: 2.5rem; } }
   .o-headingPrimary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -61,6 +64,9 @@ a:visited {
   font-weight: 700;
   letter-spacing: .2rem;
   transition: all .2s; }
+  @media only screen and (max-width: 28em) {
+    .o-headingSecondary {
+      font-size: 2.5rem; } }
   .o-headingSecondary:hover {
     transform: skewY(-2deg) skewX(-15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -114,6 +120,13 @@ h4 {
   justify-content: space-between; }
   .footer__menuContainer--menu-item {
     text-transform: uppercase; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__menuContainer--menu-item {
+        display: block;
+        font-size: 80%; } }
+    @media only screen and (max-width: 28em) {
+      .footer__menuContainer--menu-item {
+        font-size: 60%; } }
     .footer__menuContainer--menu-item:link, .footer__menuContainer--menu-item:visited {
       color: #f0f0ee;
       text-decoration: none;
@@ -123,20 +136,25 @@ h4 {
     .footer__menuContainer--menu-item:hover, .footer__menuContainer--menu-item:active {
       color: #ffffff;
       text-decoration: underline; }
+  @media only screen and (max-width: 56.25em) {
+    .footer__menuContainer--social-item {
+      font-size: 80%; } }
   .footer__menuContainer--social-item:not(:last-child) {
     margin-right: 4rem; }
-  .footer__menuContainer--social-item:last-child {
-    vertical-align: 18%;
-    font-size: 90%; }
-  .footer__menuContainer--social-item-icon {
-    font-size: 25rem;
-    color: #fff; }
 
 .footer__copy {
   text-align: center;
   color: #ccc;
   font-size: 75%;
   margin-top: 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .footer__copy {
+      font-size: 65%;
+      width: 80%;
+      margin: 3rem auto 0; } }
+  @media only screen and (max-width: 28em) {
+    .footer__copy {
+      margin-top: .5rem; } }
 
 /*////////////////////
 HEADER ELEMENTS INSTRUCTIONS
@@ -146,10 +164,15 @@ HEADER ELEMENTS INSTRUCTIONS
 
 .header__logoBox {
   padding: 1rem;
-  float: left; }
+  float: left;
+  border-radius: .3rem; }
   .header__logoBox--logo {
     height: 10rem;
     opacity: .2; }
+    @media only screen and (max-width: 28em) {
+      .header__logoBox--logo {
+        height: 6rem;
+        opacity: .1; } }
 
 .header__heroBox {
   position: absolute;
@@ -197,38 +220,56 @@ HEADER ELEMENTS INSTRUCTIONS
   margin-top: 2rem;
   float: right; }
   @media only screen and (max-width: 56.25em) {
-    .nav__mainNav {
-      display: none; } }
-  .nav__mainNav--mainNavItem {
-    display: inline-block; }
-    .nav__mainNav--mainNavItem:not(:last-child) {
-      margin-right: 3.5rem; }
-    .nav__mainNav--mainNavItem a:link,
-    .nav__mainNav--mainNavItem a:visited {
-      color: #f0f0ee;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 80%;
-      border-bottom: 2px solid transparent;
-      transition: border-bottom 0.4s;
-      letter-spacing: 1.3px;
-      word-spacing: 5px;
-      font-weight: 400;
-      padding-bottom: 1rem; }
-    .nav__mainNav--mainNavItem a:hover,
-    .nav__mainNav--mainNavItem a:active {
-      border-bottom: 2px solid #f2dae7; }
+    .nav {
+      float: left; } }
+  .nav__mainNav {
+    list-style: none; }
+    @media only screen and (max-width: 56.25em) {
+      .nav__mainNav {
+        display: none; } }
+    .nav__mainNav--Item {
+      display: inline-block; }
+      .nav__mainNav--Item:not(:last-child) {
+        margin-right: 3.5rem; }
+      .nav__mainNav--Item a:link,
+      .nav__mainNav--Item a:visited {
+        color: #f0f0ee;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 80%;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 0.4s;
+        letter-spacing: 1.3px;
+        word-spacing: 5px;
+        font-weight: 400;
+        padding-bottom: 1rem; }
+        @media only screen and (max-width: 56.25em) {
+          .nav__mainNav--Item a:link,
+          .nav__mainNav--Item a:visited {
+            padding-bottom: 0; } }
+      @media only screen and (max-width: 56.25em) {
+        .nav__mainNav--Item {
+          display: block;
+          padding-bottom: 0;
+          line-height: 1; } }
+      .nav__mainNav--Item a:hover,
+      .nav__mainNav--Item a:active {
+        border-bottom: 2px solid #f2dae7; }
   .nav__mobileNav--icon {
-    float: right;
     cursor: pointer;
-    display: none; }
+    display: none;
+    position: fixed;
+    top: 2rem;
+    right: 2rem; }
     @media only screen and (max-width: 56.25em) {
       .nav__mobileNav--icon {
-        display: inline-block; } }
+        display: block; } }
     .nav__mobileNav--icon-hamburger {
-      height: 2.5rem; }
+      height: 3rem; }
     .nav__mobileNav--icon-close {
-      display: none; }
+      display: none;
+      height: 2rem;
+      border-radius: .3rem; }
 
 .header {
   background-image: linear-gradient(to right bottom, rgba(170, 221, 187, 0.8), rgba(0, 168, 75, 0.8)), url(../img/valleyTenPeaks.jpg);
@@ -238,17 +279,28 @@ HEADER ELEMENTS INSTRUCTIONS
   height: 75vh;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%); }
+  @media only screen and (max-width: 28em) {
+    .header {
+      height: 65vh;
+      clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%); } }
 
 .sectionProjects {
   background-color: #f0f0ee;
   padding: 3rem;
   clip-path: polygon(0 0, 100% 6rem, 100% 100%, 0 100%); }
+  @media only screen and (max-width: 37.5em) {
+    .sectionProjects {
+      padding: 5rem 3rem 3rem; } }
 
 .sectionPricing {
   background-color: #ffffff;
   width: 100%;
   clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
   padding-top: 10rem; }
+  @media only screen and (max-width: 28em) {
+    .sectionPricing {
+      clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 100%);
+      padding-top: 6rem; } }
 
 .sectionAbout {
   background-color: #f0f0ee;
@@ -259,9 +311,13 @@ HEADER ELEMENTS INSTRUCTIONS
 
 .sectionGlossary {
   background-color: #ffffff;
-  clip-path: polygon(0 0, 100% 2.5%, 100% 100%, 0 100%);
   width: 100%;
-  padding-top: 15rem; }
+  padding-top: 15rem;
+  clip-path: polygon(0 0, 100% 2.5%, 100% 100%, 0 100%); }
+  @media only screen and (max-width: 28em) {
+    .sectionGlossary {
+      padding-top: 6rem;
+      clip-path: polygon(0 0, 100% 0.5%, 100% 100%, 0 100%); } }
 
 .footer {
   background-color: #360622;
@@ -279,9 +335,20 @@ HEADER ELEMENTS INSTRUCTIONS
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; }
+    @media only screen and (max-width: 28em) {
+      .sectionProjects--subText > a {
+        color: #00a84b;
+        text-decoration: none;
+        background-image: none;
+        -webkit-background-clip: initial;
+        background-clip: initial; } }
   @media only screen and (max-width: 75em) {
     .sectionProjects--subText {
       width: 60%; } }
+  @media only screen and (max-width: 37.5em) {
+    .sectionProjects--subText {
+      margin-bottom: 5rem;
+      font-size: 75%; } }
 
 .cardWrapper {
   width: 100%;
@@ -358,6 +425,10 @@ HEADER ELEMENTS INSTRUCTIONS
     .glossary {
       padding: 2rem;
       font-size: 80%; } }
+  @media only screen and (max-width: 37.5em) {
+    .glossary {
+      padding: 1rem;
+      font-size: 70%; } }
   .glossary__item {
     display: inline-flex;
     justify-content: space-around;
@@ -441,6 +512,12 @@ HEADER ELEMENTS INSTRUCTIONS
     border: 6px double #f279bb;
     border-radius: .3rem;
     margin: 3.5rem auto 3rem; }
+    @media only screen and (max-width: 56.25em) {
+      .pricing__package {
+        margin: 3.5rem auto 8rem; } }
+    @media only screen and (max-width: 28em) {
+      .pricing__package {
+        margin: 3.5rem auto 4rem; } }
     .pricing__package:last-child {
       margin-bottom: 13rem; }
     .pricing__package--item {
@@ -482,11 +559,22 @@ HEADER ELEMENTS INSTRUCTIONS
     shape-outside: circle(50% at 50% 50%);
     -webkit-clip-path: circle(45% at 50% 50%);
     clip-path: circle(45% at 50% 50%); }
+    @media only screen and (max-width: 37.5em) {
+      .sectionAbout__container--imgCont {
+        height: 10rem;
+        width: 10rem; } }
   .sectionAbout__container--content {
     font-size: 80%; }
+    @media only screen and (max-width: 37.5em) {
+      .sectionAbout__container--content {
+        font-size: 65%; } }
     .sectionAbout__container--content > a {
       color: #f279bb; }
 
 .sectionAbout__content--imgCont-img {
   height: 140%;
   width: 100%; }
+  @media only screen and (max-width: 37.5em) {
+    .sectionAbout__content--imgCont-img {
+      height: 140%;
+      width: 100%; } }

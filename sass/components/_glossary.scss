@@ -8,6 +8,12 @@
         font-size: 80%;
     }
 
+    @include respond(phone) {
+
+        padding: 1rem;
+        font-size: 70%;
+    }
+
     &__item {
         display: inline-flex;
         justify-content: space-around;

@@ -6,13 +6,19 @@
     height: 75vh;
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
+    @include respond(smallPhone) {
+        height: 65vh;
+        clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
+    }
 }
 
 .sectionProjects {
-
     background-color: $colorOffwhite;
     padding: 3rem;
     clip-path: polygon(0 0, 100% 6rem, 100% 100%, 0 100%);
+    @include respond(phone) {
+        padding: 5rem 3rem 3rem;
+    }
 }
 
 .sectionPricing {
@@ -20,21 +26,31 @@
     width: 100%;
     clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
     padding-top: 10rem;
+
+    @include respond(smallPhone) {
+        clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 100%);
+        padding-top: 6rem;
+    }
 }
 
 .sectionAbout {
-    background-color: $colorOffwhite; 
+    background-color: $colorOffwhite;
     width: 100%;
-    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%); 
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
     margin: -5rem auto 5rem;
     padding-top: 7.5rem;
 }
 
 .sectionGlossary {
-    background-color: $colorWhite;
-    clip-path: polygon(0 0, 100% 2.5%, 100% 100%, 0 100%);
+    background-color: $colorWhite;   
     width: 100%;
     padding-top: 15rem;
+    clip-path: polygon(0 0, 100% 2.5%, 100% 100%, 0 100%);
+
+    @include respond(smallPhone) {
+        padding-top: 6rem;
+        clip-path: polygon(0 0, 100% .5%, 100% 100%, 0 100%);
+    }
 }
 
 .footer {

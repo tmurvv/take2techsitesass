@@ -3,7 +3,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
     &__package {
         display: flex;
         flex-flow: column;
@@ -12,28 +11,30 @@
         border: 6px double $colorTertiary;
         border-radius: .3rem;
         margin: 3.5rem auto 3rem;
+        @include respond(portrait) {
+            margin: 3.5rem auto 8rem;
+        }
+        @include respond(smallPhone) {
+            margin: 3.5rem auto 4rem;
+        }
         &:last-child {
             margin-bottom: 13rem;
         }
-
         &--item {
             text-align: center;
-            & > a {
+            &>a {
                 color: $colorPrimary-dark;
                 text-decoration: none;
-
                 &:hover {
                     text-decoration: underline;
                 }
             }
-
             &-line1 {
                 border-bottom: 2px solid $colorTertiary;
                 padding-bottom: 2rem;
                 margin-bottom: 2rem;
             }
         }
-        
         &--price {
             justify-content: center;
             color: $colorPrimary-dark;
