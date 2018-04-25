@@ -6,6 +6,11 @@ $(document).ready(function () {
 
     $(".js--sectionGlossary__viewBtnCont--viewBtn").click(function () {
         $(".glossary").toggleClass("u-hideItem");
+
+        if($(".glossary").hasClass("u-hideItem")) {
+            $(".stickyNav").css("display", "none");
+        }
+
         
     });
 
@@ -29,7 +34,6 @@ $(document).ready(function () {
             hamburger.css("display", "none");
             close.css("display", "block");
         }
-
 
     });
 

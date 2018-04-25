@@ -311,19 +311,16 @@ HEADER ELEMENTS INSTRUCTIONS
 .sectionAbout {
   background-color: #f0f0ee;
   width: 100%;
-  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
   margin: -5rem auto 5rem;
   padding-top: 7.5rem; }
 
 .sectionGlossary {
   background-color: #ffffff;
   width: 100%;
-  padding-top: 10rem;
-  clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 100%); }
+  padding-top: 10rem; }
   @media only screen and (max-width: 28em) {
     .sectionGlossary {
-      padding-top: 6rem;
-      clip-path: polygon(0 0, 100% 0.5%, 100% 100%, 0 100%); } }
+      padding-top: 6rem; } }
 
 .footer {
   background-color: #310a20;
