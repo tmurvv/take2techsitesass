@@ -27,10 +27,6 @@ body {
   text-rendering: optimizeLegibility;
   line-height: 1.7; }
 
-a:link,
-a:visited {
-  color: #ffffff; }
-
 .o-centerHeading {
   text-align: center; }
 
@@ -87,6 +83,16 @@ h4 {
 .o-list {
   list-style: none;
   text-decoration: none; }
+
+.o-linkStyle {
+  background-color: transparent;
+  color: #310a20;
+  text-decoration: none;
+  font-family: 'Lato', 'Arial', san-serif;
+  font-size: 2rem;
+  font-weight: 400; }
+  .o-linkStyle:hover, .o-linkStyle:active {
+    text-decoration: underline; }
 
 .row {
   max-width: 114rem;
@@ -407,6 +413,10 @@ HEADER ELEMENTS INSTRUCTIONS
       left: 0;
       transform: rotateY(180deg);
       color: #ffffff; }
+      @media only screen and (max-width: 56.25em) {
+        .card__side--back {
+          transform: none;
+          display: none; } }
       .card__side--back > .o-list {
         margin: 2rem;
         text-decoration: none;
@@ -414,27 +424,34 @@ HEADER ELEMENTS INSTRUCTIONS
         text-transform: capitalize; }
         .card__side--back > .o-list > li > a:link,
         .card__side--back > .o-list > li > a:visited {
-          text-decoration: none; }
+          text-decoration: none;
+          color: #ffffff; }
         .card__side--back > .o-list > li > a:hover,
         .card__side--back > .o-list > li > a:active {
           color: #faebd7; }
       .card__side--back-btn {
-        width: 90%;
+        width: 80%;
         margin: 0 auto 2rem;
         background-color: #ccc;
         border-radius: .3rem;
         box-shadow: 1px 2px #777;
         border-bottom: 1.5rem; }
         .card__side--back-btn a {
-          color: #000;
+          color: #7c184e;
           text-decoration: none;
           font-family: 'Lato', 'Arial', san-serif;
           font-size: 1.5rem;
           font-weight: 400; }
   .card:hover .card__side--front {
     transform: rotatey(-180deg); }
+    @media only screen and (max-width: 56.25em) {
+      .card:hover .card__side--front {
+        transform: none; } }
   .card:hover .card__side--back {
     transform: rotatey(0); }
+    @media only screen and (max-width: 56.25em) {
+      .card:hover .card__side--back {
+        transform: none; } }
 
 .sectionGlossary__viewBtnCont {
   width: 100%; }
