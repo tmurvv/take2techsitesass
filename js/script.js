@@ -4,16 +4,22 @@
 
 $(document).ready(function () {
 
+    //Show_Hide Glossary Button Click 
     $(".js--sectionGlossary__viewBtnCont--viewBtn").click(function () {
         $(".glossary").toggleClass("u-hideItem");
-
-        if($(".glossary").hasClass("u-hideItem")) {
-            $(".stickyNav").css("display", "none");
-        }
-
-        
+        $(".glossary__sticky").css("display", "none");      
     });
 
+    //Show sticky header row in glossary
+    $(".js--showSticky").waypoint(function(direction) {
+        if (direction == "down") {
+            $(".glossary__sticky").css("display", "flex");
+        } else {
+            $(".glossary__sticky").css("display", "none");
+        }
+    });
+
+    //Show_Hide mainNav menu                                     
     $(".js--nav__mobileNav--icon").click(function () {
 
         var mainNav = $(".js--main-nav");

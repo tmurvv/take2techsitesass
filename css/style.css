@@ -148,6 +148,13 @@ h4 {
       font-size: 80%; } }
   .footer__menuContainer--social-item:not(:last-child) {
     margin-right: 4rem; }
+  .footer__menuContainer--social-item:last-child {
+    font-size: 90%;
+    color: #ffffff;
+    text-decoration: none; }
+  .footer__menuContainer--social-item-img {
+    height: 2rem;
+    border-radius: .3rem; }
 
 .footer__copy {
   text-align: center;
@@ -311,16 +318,19 @@ HEADER ELEMENTS INSTRUCTIONS
 .sectionAbout {
   background-color: #f0f0ee;
   width: 100%;
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
   margin: -5rem auto 5rem;
   padding-top: 7.5rem; }
 
 .sectionGlossary {
   background-color: #ffffff;
   width: 100%;
-  padding-top: 10rem; }
+  padding-top: 10rem;
+  clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 100%); }
   @media only screen and (max-width: 28em) {
     .sectionGlossary {
-      padding-top: 6rem; } }
+      padding-top: 6rem;
+      clip-path: polygon(0 0, 100% 0.5%, 100% 100%, 0 100%); } }
 
 .footer {
   background-color: #310a20;
@@ -451,7 +461,8 @@ HEADER ELEMENTS INSTRUCTIONS
         transform: none; } }
 
 .sectionGlossary__viewBtnCont {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: -3rem; }
   .sectionGlossary__viewBtnCont--viewBtn {
     margin-left: 50%;
     margin-top: 6rem;
@@ -534,6 +545,7 @@ HEADER ELEMENTS INSTRUCTIONS
     .glossary__item:nth-child(even) {
       color: #4c7571; }
   .glossary__sticky {
+    display: none;
     color: #7c184e !important;
     position: fixed;
     top: 0;

@@ -36,7 +36,7 @@
 .sectionAbout {
     background-color: $colorOffwhite;
     width: 100%;
-    //clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
     margin: -5rem auto 5rem;
     padding-top: 7.5rem;
 }
@@ -45,16 +45,15 @@
     background-color: $colorWhite;   
     width: 100%;
     padding-top: 10rem;
-    //clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 100%);
 
     @include respond(smallPhone) {
         padding-top: 6rem;
-        //clip-path: polygon(0 0, 100% .5%, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% .5%, 100% 100%, 0 100%);
     }
 }
-
 .footer {   
     background-color: $colorPaletteBlack;
     padding: 4rem;
-
 }
+

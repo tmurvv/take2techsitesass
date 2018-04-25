@@ -36,18 +36,20 @@
                 @include respond(portrait) {
                     font-size: 80%;   
                 }
+
                 &:not(:last-child) {
                     margin-right: 4rem;
                 }
 
                 &:last-child {
-                    //  vertical-align: 18%;
-                    //  font-size: 90%;
+                     font-size: 90%;
+                     color: $colorWhite;
+                     text-decoration: none;
+                     
                 }
-
-                &-icon {
-                    // font-size: 25rem;
-                    // color: #fff;
+                &-img {
+                    height: 2rem;
+                    border-radius: .3rem;
                 }
             }
         }

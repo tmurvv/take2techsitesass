@@ -1,5 +1,6 @@
 .sectionGlossary__viewBtnCont { //sectionGlossary__viewBtnCont--viewBtn
     width: 100%;
+    margin-bottom: -3rem;
 
     &--viewBtn {      
         margin-left: 50%;
@@ -15,10 +16,10 @@
     }
 }
 
-.glossary {  
+.glossary {
+
     flex-flow: column;
     padding: 0 5rem 5rem 5rem;
-
 
     @include respond(portrait) {
         padding: 2rem;
@@ -98,6 +99,7 @@
     Sticky Headings
     *************/
     &__sticky {
+        display: none;
         color: $colorTertiary-dark !important;
         position: fixed;
         top: 0;
@@ -109,6 +111,7 @@
         padding: 1rem 7rem;
         clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
         opacity: .9;
+       
         @include respond(portrait) {
             display: none;
         }
