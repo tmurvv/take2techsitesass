@@ -84,14 +84,15 @@
             top: 0;
             left: 0;
             transform: rotateY(180deg);
+            z-index: -1;
+
             @include respond(portrait) {
                 transform: none;
-                display: none;
             }
 
             color: $colorWhite;
             &>.o-list {
-                margin: 2rem;
+                margin: 2rem 2rem 0;
                 text-decoration: none;
                 font-size: 80%;
                 text-transform: capitalize;
@@ -107,18 +108,23 @@
             }
             &-btn {
                 width: 80%;
-                margin: 0 auto 2rem;
-                background-color: $colorGrey-light3;
-                border-radius: .3rem;
-                box-shadow: 1px 2px $colorGrey-dark1;
-                border-bottom: 1.5rem;
-                & a {
-                    color: $colorTertiary-dark;
+                margin: -1rem auto 0;
+                background-color: transparent;
+                color: $colorWhite;
+                cursor: pointer;
+                font-weight: 300;
+                :focus {
+                outline: none;
+                }
+                
+                & a:link {
+                    color: $colorWhite;
                     text-decoration: none;
                     font-family: 'Lato', 'Arial', san-serif;
-                    font-size: 1.5rem;
-                    font-weight: 400;
-                }
+                    font-size: 2rem;
+                    font-weight: 300;
+
+                }               
             }
         }
     }

@@ -88,18 +88,21 @@
 
         <div class="cardWrapper">
             <div class="card">
-                <div class="card__side card__side--front">
+                <div class="card__side card__side--front js--popup1">
 
                     <p>Grad Survey Form</p>
                     <div class="card__side--front-imgContainer1">
                         <img class="card__side--front-img" alt="Grad Survey Landing Page" src="../img/GradSurveyScreenShot.png">
                     </div>
 
-                    <p><a href="InnoGradSurvey/gradindex.html" class="o-linkStyle" target="_blank">Visit Site</a></p>
-<!-- <a href="#popup3" class="o-linkStyle">Technical Details</a><br> -->
+                    <p>
+                        <a href="InnoGradSurvey/gradindex.html" class="o-linkStyle" target="_blank">Visit Site</a>
+                    </p>
+                    <button onclick="showPopup(1)" class="o-linkStyle js--cardFrontTechnical">Technical Details</button>
+                    <br>
                 </div>
 
-                <div class="card__side card__side--back popup" id="popup1">
+                <div class="card__side card__side--back" id="popup1">
                     Grad Survey Form
                     <br> Technical Specs
                     <ul class="o-list">
@@ -121,8 +124,11 @@
                             <a href="#performance">performance optimization</a>
                         </li>
                     </ul>
+                    <div>
+                        <button type="button" class="o-linkStyle card__side--back-btn js--popBack">Back</a>
+                        </div>
                     <div class="card__side--back-btn">
-                        <a href="InnoGradSurvey/gradindex.html" target="_blank">Visit Site</a>
+                        <a href="InnoGradSurvey/gradindex.html" target="_blank" class="o-linkStyle">Visit Site</a>
                     </div>
                 </div>
             </div>
@@ -134,8 +140,10 @@
                         <img class="card__side--front-img" alt="Grad Survey Landing Page" src="../img/mySiteScreenShot.png">
                     </div>
 
-                    <p><a href="#top" class="o-linkStyle">Visit Site</a></p>
-                  <!-- <a href="#popup3" class="o-linkStyle">Technical Details</a><br> -->
+                    <p>
+                        <a href="#top" class="o-linkStyle">Visit Site</a>
+                    </p>
+                    <!-- <a href="#popup3" class="o-linkStyle">Technical Details</a><br> -->
                 </div>
 
                 <div class="card__side card__side--back popup" id="popup2">
@@ -174,9 +182,11 @@
                         <img class="card__side--front-img" alt="Grad Survey Landing Page" src="../img/underconstruction2mytint.gif">
                     </div>
 
-                    <p><a href="#" class="o-linkStyle" target="_blank">Visit Site</a></p>
+                    <p>
+                        <a href="#" class="o-linkStyle" target="_blank">Visit Site</a>
+                    </p>
                     <!-- <a href="#popup3" class="o-linkStyle">Technical Details</a><br> -->
-                    
+
                 </div>
 
                 <div class="card__side card__side--back popup" id="popup3">
@@ -303,19 +313,13 @@
             </div>
             <div class="glossary__item glossary__item-firstRow glossary__sticky">
                 <div class="glossary__item--term">
-                    <span class="u-underline">Specification</span>
+                    Specification
                 </div>
                 <div class="glossary__item--helps">
-                    <span class="u-underline">How</span>&nbsp;
-                    <span class="u-underline">does</span>&nbsp;
-                    <span class="u-underline">it</span>&nbsp;
-                    <span class="u-underline">help</span>&nbsp;
-                    <span class="u-underline">me?</span>
+                    How does it help me?
                 </div>
                 <div class="glossary__item--meaning">
-                    <span class="u-underline">What</span>&nbsp;
-                    <span class="u-underline">is</span>&nbsp;
-                    <span class="u-underline">it?</span>
+                    What is it?
                 </div>
             </div>
 
@@ -323,7 +327,8 @@
                 <div class="glossary__item--term">mobile friendly</div>
                 <div class="glossary__item--helps">Creates better usuability for your website visitor.</div>
                 <div class="glossary__item--meaning">A Mobile Friendly website looks great on any size screen from phone to computer. Also known as "responsive
-                    design."</div>
+                    design."
+                </div>
 
             </div>
 
@@ -449,7 +454,7 @@
         </div>
     </footer>
 
-    
+
 </body>
 
 </html>

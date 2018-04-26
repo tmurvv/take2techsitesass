@@ -1,8 +1,8 @@
-.sectionGlossary__viewBtnCont { //sectionGlossary__viewBtnCont--viewBtn
+.sectionGlossary__viewBtnCont {
+    //sectionGlossary__viewBtnCont--viewBtn
     width: 100%;
     margin-bottom: -3rem;
-
-    &--viewBtn {      
+    &--viewBtn {
         margin-left: 50%;
         margin-top: 6rem;
         transform: translate(-50%, -50%);
@@ -12,15 +12,13 @@
         color: $colorTertiary-dark;
         padding: 2rem 4rem;
         border: none;
-        cursor: pointer;       
+        cursor: pointer;
     }
 }
 
 .glossary {
-
     flex-flow: column;
     padding: 0 5rem 5rem 5rem;
-
     @include respond(portrait) {
         padding: 2rem;
         font-size: 80%;
@@ -53,11 +51,10 @@
             text-transform: capitalize;
             padding-left: 1rem;
             padding-right: 2rem;
-
             @include respond(portrait) {
                 padding-left: 0rem;
-                border-bottom: .5rem double $colorTertiary-dark;
                 font-size: 125%;
+                border-bottom: .5rem double $colorTertiary-dark;
             }
         }
         &--helps {
@@ -111,10 +108,21 @@
         padding: 1rem 7rem;
         clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
         opacity: .9;
-       
+        border: none;
         @include respond(portrait) {
             display: none;
         }
     }
 }
 
+/***************
+Also for sticky headings
+***************/
+
+.glossary__item-firstRow>.glossary__item--term,
+.glossary__item-firstRow>.glossary__item--helps {
+    border:none;
+    padding: none;
+
+    
+}

@@ -90,7 +90,8 @@ h4 {
   text-decoration: none;
   font-family: 'Lato', 'Arial', san-serif;
   font-size: 2rem;
-  font-weight: 400; }
+  font-weight: 400;
+  border: none; }
   .o-linkStyle:hover, .o-linkStyle:active {
     text-decoration: underline; }
 
@@ -419,13 +420,13 @@ HEADER ELEMENTS INSTRUCTIONS
       top: 0;
       left: 0;
       transform: rotateY(180deg);
+      z-index: -1;
       color: #ffffff; }
       @media only screen and (max-width: 56.25em) {
         .card__side--back {
-          transform: none;
-          display: none; } }
+          transform: none; } }
       .card__side--back > .o-list {
-        margin: 2rem;
+        margin: 2rem 2rem 0;
         text-decoration: none;
         font-size: 80%;
         text-transform: capitalize; }
@@ -438,17 +439,19 @@ HEADER ELEMENTS INSTRUCTIONS
           color: #faebd7; }
       .card__side--back-btn {
         width: 80%;
-        margin: 0 auto 2rem;
-        background-color: #ccc;
-        border-radius: .3rem;
-        box-shadow: 1px 2px #777;
-        border-bottom: 1.5rem; }
-        .card__side--back-btn a {
-          color: #7c184e;
+        margin: -1rem auto 0;
+        background-color: transparent;
+        color: #ffffff;
+        cursor: pointer;
+        font-weight: 300; }
+        .card__side--back-btn :focus {
+          outline: none; }
+        .card__side--back-btn a:link {
+          color: #ffffff;
           text-decoration: none;
           font-family: 'Lato', 'Arial', san-serif;
-          font-size: 1.5rem;
-          font-weight: 400; }
+          font-size: 2rem;
+          font-weight: 300; }
   .card:hover .card__side--front {
     transform: rotatey(-180deg); }
     @media only screen and (max-width: 56.25em) {
@@ -515,8 +518,8 @@ HEADER ELEMENTS INSTRUCTIONS
       @media only screen and (max-width: 56.25em) {
         .glossary__item--term {
           padding-left: 0rem;
-          border-bottom: 0.5rem double #7c184e;
-          font-size: 125%; } }
+          font-size: 125%;
+          border-bottom: 0.5rem double #7c184e; } }
     .glossary__item--helps {
       flex: 0 0 40%;
       margin-right: 4rem; }
@@ -556,10 +559,19 @@ HEADER ELEMENTS INSTRUCTIONS
     text-align: center;
     padding: 1rem 7rem;
     clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
-    opacity: .9; }
+    opacity: .9;
+    border: none; }
     @media only screen and (max-width: 56.25em) {
       .glossary__sticky {
         display: none; } }
+
+/***************
+Also for sticky headings
+***************/
+.glossary__item-firstRow > .glossary__item--term,
+.glossary__item-firstRow > .glossary__item--helps {
+  border: none;
+  padding: none; }
 
 .pricing {
   width: 100%;
