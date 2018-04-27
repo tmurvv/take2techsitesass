@@ -2,7 +2,9 @@ for projects, take new screen shot of this site with updated colors
 reduce opacity on Grad survey form background and take a new screen shot. then return opacity for actual grad site.
 add beaucoup comments
 reorder styles when multiple used
-for touch devices create popups to view tech specs and put tech specs button back on front of card
 footer email underlined on hover
 glossary make sticky header appear less abruptly
 mainNav fixed pos when opened from hamburger
+close glossary choice on sticky menu
+
+in objects file make linkStyle one class again and add color White and colorDark to utilities

@@ -1,0 +1,47 @@
+.o-btn {
+    margin: 1rem;
+    padding: 1rem 1.25rem;
+    border-radius: .5rem;
+    &:focus {
+        outline: none;
+    }
+}
+.o-list {
+    list-style: none;
+    text-decoration: none;
+}
+
+.o-linkStyle-white {
+    background-color: transparent;   
+    color: $colorWhite;
+    text-decoration: none;
+    font-family: 'Lato', 'Arial', san-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    border: none;
+
+    &:hover,
+    &:active {
+        text-decoration: underline;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+.o-linkStyle-dark {
+    background-color: transparent;   
+    color: $colorTertiary-dark;
+    text-decoration: none;
+    font-family: 'Lato', 'Arial', san-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    border: none;
+
+    &:hover,
+    &:active {
+        text-decoration: underline;
+    }
+    &:focus {
+        outline: none;
+    }
+}

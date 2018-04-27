@@ -85,8 +85,8 @@
             left: 0;
             transform: rotateY(180deg);
             z-index: -1;
-
-            @include respond(portrait) {
+          
+            @include respond(landscape) {
                 transform: none;
             }
 
@@ -113,9 +113,7 @@
                 color: $colorWhite;
                 cursor: pointer;
                 font-weight: 300;
-                :focus {
-                outline: none;
-                }
+                :focus {outline: none;}
                 
                 & a:link {
                     color: $colorWhite;
@@ -123,20 +121,19 @@
                     font-family: 'Lato', 'Arial', san-serif;
                     font-size: 2rem;
                     font-weight: 300;
-
                 }               
             }
         }
     }
     &:hover &__side--front {
         transform: rotatey(-180deg);
-        @include respond(portrait) {
+        @include respond(landscape) {
             transform: none;
         }
     }
     &:hover &__side--back {
         transform: rotatey(0);
-        @include respond(portrait) {
+        @include respond(landscape) {
             transform: none;
         }
     }

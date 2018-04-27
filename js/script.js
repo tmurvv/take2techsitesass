@@ -26,20 +26,46 @@ $(document).ready(function () {
     });
 
     //Projects page--Show technical deets popups for touch screens
-
-    $(".js--cardFrontTechnical").click(function (popupNumber) {
+    //Card1
+    $(".js--cardFrontTechnical1").click(function () {
         $(".js--popup1").css("display", "none");
     });
 
-    $(".js--popBack").click(function (popupNumber) {
-       $(".js--popup1").css("display", "flex");
+    $(".js--popBack1").click(function () {
+        $(".js--popup1").css("display", "flex");
     });
 
+    //Card2
+    $(".js--cardFrontTechnical2").click(function () {
+        $(".js--popup2").css("display", "none");
+    });
+
+    $(".js--popBack2").click(function () {
+        $(".js--popup2").css("display", "flex");
+    });
+
+    //Card3
+    $(".js--cardFrontTechnical3").click(function () {
+        $(".js--popup3").css("display", "none");
+    });
+
+    $(".js--popBack3").click(function () {
+        $(".js--popup3").css("display", "flex");
+    });
+    /********************
+    *GLOSSARY
+    ********************/
 
     //Show_Hide Glossary Button Click 
     $(".js--sectionGlossary__viewBtnCont--viewBtn").click(function () {
         $(".glossary").toggleClass("u-hideItem");
-        $(".glossary__sticky").css("display", "none");
+    });
+
+    //Check if glossary open on term click
+    $(".js--openGlossary").click(function () {
+        if (!$('js--checkVisible').is(':visible')) {
+           $(".glossary").removeClass("u-hideItem");
+        }
     });
 
     //Show sticky header row in glossary
