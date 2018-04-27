@@ -162,15 +162,22 @@ h4 {
   @media only screen and (max-width: 56.25em) {
     .footer__menuContainer--social-item {
       font-size: 80%; } }
+  .footer__menuContainer--social-item:link, .footer__menuContainer--social-item:visited {
+    color: #f0f0ee;
+    text-decoration: none;
+    transition: all .4s; }
+  .footer__menuContainer--social-item:hover, .footer__menuContainer--social-item:active {
+    color: #ffffff;
+    text-decoration: underline; }
   .footer__menuContainer--social-item:not(:last-child) {
     margin-right: 4rem; }
-  .footer__menuContainer--social-item:last-child {
-    font-size: 90%;
-    color: #ffffff;
-    text-decoration: none; }
   .footer__menuContainer--social-item-img {
     height: 2rem;
     border-radius: .3rem; }
+    .footer__menuContainer--social-item-img:hover, .footer__menuContainer--social-item-img:active {
+      transform: scale(1.25, 1.25); }
+  .footer__menuContainer--social-item-web {
+    vertical-align: 10%; }
 
 .footer__copy {
   text-align: center;

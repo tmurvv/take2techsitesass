@@ -4,7 +4,6 @@ add beaucoup comments
 reorder styles when multiple used
 footer email underlined on hover
 glossary make sticky header appear less abruptly
-mainNav fixed pos when opened from hamburger
 close glossary choice on sticky menu
 
 in objects file make linkStyle one class again and add color White and colorDark to utilities

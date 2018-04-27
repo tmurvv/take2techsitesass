@@ -9,11 +9,9 @@
                     display: block;
                     font-size: 80%;
                 }
-
                 @include respond(smallPhone) {
                     font-size: 60%;
                 }
-
                 &:link,
                 &:visited {
                     color: $colorOffwhite;
@@ -30,45 +28,52 @@
                 }
             }
         }
-      
         &--social {
             &-item {
                 @include respond(portrait) {
-                    font-size: 80%;   
+                    font-size: 80%;
                 }
-
+                &:link,
+                &:visited {
+                    color: $colorOffwhite;
+                    text-decoration: none;
+                    transition: all .4s;
+                }
+                &:hover,
+                &:active {
+                    color: $colorWhite;
+                    text-decoration: underline;
+                }
                 &:not(:last-child) {
                     margin-right: 4rem;
-                }
-
-                &:last-child {
-                     font-size: 90%;
-                     color: $colorWhite;
-                     text-decoration: none;
-                     
-                }
+                } // 
                 &-img {
                     height: 2rem;
                     border-radius: .3rem;
+                    &:hover,
+                    &:active {
+                        transform: scale(1.25, 1.25);
+                    }
+                }
+            
+                &-web {
+                    vertical-align: 10%;
                 }
             }
         }
     }
-
     &__copy {
         text-align: center;
         color: $colorGrey-light3;
         font-size: 75%;
         margin-top: 2rem;
-
         @include respond(phone) {
             font-size: 65%;
             width: 80%;
             margin: 3rem auto 0;
         }
-
         @include respond(smallPhone) {
             margin-top: .5rem;
-         }
+        }
     }
 }

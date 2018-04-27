@@ -1,10 +1,10 @@
-get ion icons working in this project - then add linkedin icon on bottom.
+get ion icons working in this project - then add linkedin icon on bottom. -- refer to Natours project for JSON with icons
     JSON ENTRY FOR ICON FILE --- "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.compiled.css",
-
-clip-path for section glossary changes with click-unclick of glossary button
+    Also add concat to prefix command to get sequence right
+    Also add concat:css to build command
 
 glossary sticky headings not lined up on portrait
 
-get npm build going
+Build breaks image retrieval
 
 back of card visit site btton not underline on hover
