@@ -1,9 +1,9 @@
-for projects, take new screen shot of this site with updated colors
+responsive images
 reduce opacity on Grad survey form background and take a new screen shot. then return opacity for actual grad site.
 add beaucoup comments
 reorder styles when multiple used
 footer email underlined on hover
 glossary make sticky header appear less abruptly
 close glossary choice on sticky menu
-
+in projects make green opacity less so colour softer, need to use opacity to hide back card
 in objects file make linkStyle one class again and add color White and colorDark to utilities

@@ -1,5 +1,4 @@
 .sectionGlossary__viewBtnCont {
-    //sectionGlossary__viewBtnCont--viewBtn
     width: 100%;
     margin-bottom: -3rem;
     &--viewBtn {
@@ -102,7 +101,8 @@
         top: 0;
         left: 0;
         width: 100%;
-        font-size: 80%;
+        font-size: 90%;
+        font-weight: 300;
         background-color: $colorPrimary;
         text-align: center;
         padding: 1rem 7rem;

@@ -42,9 +42,12 @@ HEADER ELEMENTS INSTRUCTIONS
 
         &--subText {
             font-weight: 400;
-            padding-top: 3rem;
-            @include clipTextTertiary;
+            padding-top: 3rem;           
             font-size: 75%;
+            background-image: linear-gradient(to right, $colorSecondary 70%, $colorTertiary-dark);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
         }
     }
     

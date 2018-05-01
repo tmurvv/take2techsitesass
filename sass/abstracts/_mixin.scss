@@ -43,17 +43,19 @@
 }
 
 @mixin clipTextTertiary {
-    background-image: linear-gradient(to right, $colorSecondary 40%, $colorTertiary-dark);
+    background-image: linear-gradient(to right, $colorSecondary 5%, $colorTertiary-dark);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+
 }
 @mixin clipTextTertiaryRev {
-    background-image: linear-gradient(to right, $colorTertiary-dark, $colorSecondary 60%);
+    background-image: linear-gradient(to right, $colorTertiary-dark, $colorSecondary 80%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
+
 
 //MEDIA QUERIES SECTION
 //Recommended order of developing queries--base + typography > grid + page layout > components

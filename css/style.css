@@ -34,7 +34,7 @@ body {
   font-size: 4rem;
   font-weight: 400;
   display: inline-block;
-  background-image: linear-gradient(to right, #faebd7 40%, #7c184e);
+  background-image: linear-gradient(to right, #fff5e7 5%, #963168);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -68,7 +68,7 @@ body {
 
 h4 {
   text-align: center;
-  color: #7c184e; }
+  color: #963168; }
 
 .u-underline {
   text-decoration: underline; }
@@ -84,22 +84,22 @@ h4 {
   list-style: none;
   text-decoration: none; }
 
-.o-linkStyle-white {
+.o-linkStyle-light {
   background-color: transparent;
-  color: #ffffff;
+  color: #fff5e7;
   text-decoration: none;
   font-family: 'Lato', 'Arial', san-serif;
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 300;
   border: none; }
-  .o-linkStyle-white:hover, .o-linkStyle-white:active {
+  .o-linkStyle-light:hover, .o-linkStyle-light:active {
     text-decoration: underline; }
-  .o-linkStyle-white:focus {
+  .o-linkStyle-light:focus {
     outline: none; }
 
 .o-linkStyle-dark {
   background-color: transparent;
-  color: #7c184e;
+  color: #963168;
   text-decoration: none;
   font-family: 'Lato', 'Arial', san-serif;
   font-size: 2rem;
@@ -222,7 +222,7 @@ HEADER ELEMENTS INSTRUCTIONS
     letter-spacing: .8rem;
     font-weight: 600; }
     .header__heroBox--mainHeading > span {
-      background-image: linear-gradient(to right, #7c184e, #faebd7 60%);
+      background-image: linear-gradient(to right, #963168, #fff5e7 80%);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
@@ -231,11 +231,11 @@ HEADER ELEMENTS INSTRUCTIONS
   .header__heroBox--subText {
     font-weight: 400;
     padding-top: 3rem;
-    background-image: linear-gradient(to right, #faebd7 40%, #7c184e);
+    font-size: 75%;
+    background-image: linear-gradient(to right, #fff5e7 70%, #963168);
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
-    font-size: 75%; }
+    color: transparent; }
 
 .header.ion-navicon {
   color: #ffffff;
@@ -269,7 +269,7 @@ HEADER ELEMENTS INSTRUCTIONS
         margin-right: 3.5rem; }
       .nav__mainNav--Item a:link,
       .nav__mainNav--Item a:visited {
-        color: #faebd7;
+        color: #fff5e7;
         text-decoration: none;
         text-transform: uppercase;
         font-size: 80%;
@@ -414,30 +414,32 @@ HEADER ELEMENTS INSTRUCTIONS
     border-radius: 7px;
     border: 1px transparent #ffffff;
     text-align: center;
-    box-shadow: -10px -10px 20px #faebd7 inset; }
+    box-shadow: -10px -10px 20px #fff5e7 inset; }
     .card__side--front {
-      background-color: #ec3093;
+      background-color: #4c7571;
+      color: #fff5e7;
       position: absolute;
       top: 0;
       left: 0;
       padding-bottom: 4rem;
       padding-top: 4rem; }
       .card__side--front-imgContainer1 {
-        width: 73%;
-        margin: 3rem auto 1rem; }
+        width: 76%;
+        height: 51%;
+        margin: 1.5rem auto 1rem; }
       .card__side--front-imgContainer2 {
         width: 83%;
-        height: 50%;
+        height: 53%;
         margin: 1rem auto 1rem; }
       .card__side--front-imgContainer3 {
-        width: 77%;
+        width: 85%;
         height: 55%;
         margin: 3rem auto 1rem; }
       .card__side--front-img {
         width: 100%;
         height: 100%; }
     .card__side--back {
-      background-color: #7c184e;
+      background-color: #963168;
       position: absolute;
       top: 0;
       left: 0;
@@ -455,7 +457,7 @@ HEADER ELEMENTS INSTRUCTIONS
         .card__side--back > .o-list > li > a:link,
         .card__side--back > .o-list > li > a:visited {
           text-decoration: none;
-          color: #ffffff; }
+          color: #fff5e7; }
         .card__side--back > .o-list > li > a:hover,
         .card__side--back > .o-list > li > a:active {
           color: #faebd7; }
@@ -463,17 +465,22 @@ HEADER ELEMENTS INSTRUCTIONS
         width: 80%;
         margin: -1rem auto 0;
         background-color: transparent;
-        color: #ffffff;
+        color: #fff5e7;
         cursor: pointer;
         font-weight: 300; }
         .card__side--back-btn :focus {
           outline: none; }
         .card__side--back-btn a:link {
-          color: #ffffff;
+          color: #fff5e7;
           text-decoration: none;
           font-family: 'Lato', 'Arial', san-serif;
           font-size: 2rem;
           font-weight: 300; }
+        .card__side--back-btnContainer {
+          margin-bottom: 2rem; }
+          .card__side--back-btnContainer > button {
+            opacity: 1;
+            visibility: visible; }
   .card:hover .card__side--front {
     transform: rotatey(-180deg); }
     @media only screen and (max-width: 75em) {
@@ -481,9 +488,15 @@ HEADER ELEMENTS INSTRUCTIONS
         transform: none; } }
   .card:hover .card__side--back {
     transform: rotatey(0); }
+    .card:hover .card__side--back .card__side--back-btnContainer > button {
+      opacity: 0;
+      visibility: hidden; }
     @media only screen and (max-width: 75em) {
       .card:hover .card__side--back {
-        transform: none; } }
+        transform: none; }
+        .card:hover .card__side--back .card__side--back-btnContainer > button {
+          opacity: 1;
+          visibility: visible; } }
 
 .sectionGlossary__viewBtnCont {
   width: 100%;
@@ -495,7 +508,7 @@ HEADER ELEMENTS INSTRUCTIONS
     font-size: 120%;
     font-weight: 300;
     background-color: transparent;
-    color: #7c184e;
+    color: #963168;
     padding: 2rem 4rem 0;
     border: none;
     cursor: pointer; }
@@ -528,7 +541,7 @@ HEADER ELEMENTS INSTRUCTIONS
     .glossary__item-firstRow {
       font-weight: 700;
       font-size: 110%;
-      color: #7c184e; }
+      color: #963168; }
       @media only screen and (max-width: 56.25em) {
         .glossary__item-firstRow {
           display: none; } }
@@ -541,17 +554,17 @@ HEADER ELEMENTS INSTRUCTIONS
         .glossary__item--term {
           padding-left: 0rem;
           font-size: 125%;
-          border-bottom: 0.5rem double #7c184e; } }
+          border-bottom: 0.5rem double #963168; } }
     .glossary__item--helps {
       flex: 0 0 40%;
       margin-right: 4rem; }
       @media only screen and (max-width: 56.25em) {
         .glossary__item--helps {
           padding-right: 1rem;
-          border-bottom: 0.1rem dashed #7c184e;
+          border-bottom: 0.1rem dashed #963168;
           padding-bottom: .5rem; } }
       .glossary__item--helps > a {
-        color: #ec3093;
+        color: #DC91BA;
         text-decoration: none; }
         .glossary__item--helps > a:hover {
           text-decoration: underline; }
@@ -563,7 +576,7 @@ HEADER ELEMENTS INSTRUCTIONS
           display: inline;
           padding-top: .5rem; } }
       .glossary__item--meaning > a {
-        color: #ec3093;
+        color: #DC91BA;
         text-decoration: none; }
         .glossary__item--meaning > a:hover {
           text-decoration: underline; }
@@ -571,12 +584,13 @@ HEADER ELEMENTS INSTRUCTIONS
       color: #4c7571; }
   .glossary__sticky {
     display: none;
-    color: #7c184e !important;
+    color: #963168 !important;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    font-size: 80%;
+    font-size: 90%;
+    font-weight: 300;
     background-color: #7bccc2;
     text-align: center;
     padding: 1rem 7rem;
@@ -624,7 +638,7 @@ Also for sticky headings
         .pricing__package--item > a:hover {
           text-decoration: underline; }
       .pricing__package--item-line1 {
-        border-bottom: 2px solid #ec3093;
+        border-bottom: 2px solid #DC91BA;
         padding-bottom: 2rem;
         margin-bottom: 2rem; }
     .pricing__package--price {
@@ -632,7 +646,7 @@ Also for sticky headings
       color: #4c7571;
       font-size: 120%;
       font-style: italic;
-      border-top: 2px solid #ec3093;
+      border-top: 2px solid #DC91BA;
       padding-top: 2rem;
       margin-top: 2rem;
       text-align: center; }
@@ -643,7 +657,7 @@ Also for sticky headings
   padding: 2rem;
   background-color: #ffffff;
   border-radius: .3rem;
-  box-shadow: -8px -8px 20px #ec3093 inset; }
+  box-shadow: -8px -8px 20px #DC91BA inset; }
   @media only screen and (max-width: 75em) {
     .sectionAbout__container {
       width: 75%; } }
@@ -665,7 +679,7 @@ Also for sticky headings
       .sectionAbout__container--content {
         font-size: 65%; } }
     .sectionAbout__container--content > a {
-      color: #ec3093; }
+      color: #DC91BA; }
 
 .sectionAbout__content--imgCont-img {
   height: 140%;

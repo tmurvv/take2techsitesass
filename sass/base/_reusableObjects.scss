@@ -11,13 +11,13 @@
     text-decoration: none;
 }
 
-.o-linkStyle-white {
+.o-linkStyle-light {
     background-color: transparent;   
-    color: $colorWhite;
+    color: $colorSecondary;
     text-decoration: none;
     font-family: 'Lato', 'Arial', san-serif;
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 300;
     border: none;
 
     &:hover,
@@ -28,6 +28,7 @@
         outline: none;
     }
 }
+
 .o-linkStyle-dark {
     background-color: transparent;   
     color: $colorTertiary-dark;
