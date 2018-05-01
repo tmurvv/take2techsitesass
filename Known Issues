@@ -7,11 +7,9 @@ glossary sticky headings not lined up on portrait
 
 Build breaks image retrieval
 
-back of card visit site btton not underline on hover
-
-phone about my image obscures text, hamburger menu needs more right margin.
-
-when cards flipping, should not be back button
+phone about me image obscures text, hamburger menu needs more right margin.
 
 MAC Laptop-- shadows around header elements
 iOS projects subtext not centered, but right aligned
+
+desktop -- if hamburger pressed on and off, main not show on resize to large
