@@ -221,6 +221,8 @@ HEADER ELEMENTS INSTRUCTIONS
   .header__heroBox--mainHeading {
     letter-spacing: .8rem;
     font-weight: 600; }
+    .header__heroBox--mainHeading:focus {
+      outline: none; }
     .header__heroBox--mainHeading > span {
       background-image: linear-gradient(to right, #963168, #fff5e7 80%);
       -webkit-background-clip: text;
@@ -230,7 +232,6 @@ HEADER ELEMENTS INSTRUCTIONS
       font-weight: 500; }
   .header__heroBox--subText {
     font-weight: 400;
-    padding-top: 3rem;
     font-size: 75%;
     background-image: linear-gradient(to right, #fff5e7 70%, #963168);
     -webkit-background-clip: text;
@@ -296,7 +297,7 @@ HEADER ELEMENTS INSTRUCTIONS
     display: none;
     position: fixed;
     top: 2rem;
-    right: 2rem; }
+    right: 5rem; }
     @media only screen and (max-width: 56.25em) {
       .nav__mobileNav--icon {
         display: block; } }
@@ -432,9 +433,9 @@ HEADER ELEMENTS INSTRUCTIONS
         height: 53%;
         margin: 1rem auto 1rem; }
       .card__side--front-imgContainer3 {
-        width: 85%;
-        height: 55%;
-        margin: 3rem auto 1rem; }
+        width: 74%;
+        height: 52%;
+        margin: 1.5rem auto 1rem; }
       .card__side--front-img {
         width: 100%;
         height: 100%; }
@@ -597,9 +598,6 @@ HEADER ELEMENTS INSTRUCTIONS
     clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
     opacity: .9;
     border: none; }
-    @media only screen and (max-width: 56.25em) {
-      .glossary__sticky {
-        display: none; } }
 
 /***************
 Also for sticky headings
@@ -671,8 +669,7 @@ Also for sticky headings
     clip-path: circle(45% at 50% 50%); }
     @media only screen and (max-width: 37.5em) {
       .sectionAbout__container--imgCont {
-        height: 10rem;
-        width: 10rem; } }
+        display: none; } }
   .sectionAbout__container--content {
     font-size: 80%; }
     @media only screen and (max-width: 37.5em) {

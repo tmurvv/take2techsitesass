@@ -32,6 +32,9 @@ HEADER ELEMENTS INSTRUCTIONS
         &--mainHeading {
             letter-spacing: .8rem;
             font-weight: 600;
+            &:focus {
+                outline:none;
+            }
 
             &>span {
                 @include clipTextTertiaryRev;
@@ -41,13 +44,12 @@ HEADER ELEMENTS INSTRUCTIONS
         }
 
         &--subText {
-            font-weight: 400;
-            padding-top: 3rem;           
+            font-weight: 400;           
             font-size: 75%;
-            background-image: linear-gradient(to right, $colorSecondary 70%, $colorTertiary-dark);
+            background-image: linear-gradient(to right, $colorSecondary 70%, $colorTertiary-dark); 
             -webkit-background-clip: text;
             background-clip: text;
-            color: transparent;
+            color: transparent;            
         }
     }
     

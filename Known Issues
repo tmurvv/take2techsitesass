@@ -1,15 +1,11 @@
-get ion icons working in this project - then add linkedin icon on bottom. -- refer to Natours project for JSON with icons
-    JSON ENTRY FOR ICON FILE --- "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.compiled.css",
-    Also add concat to prefix command to get sequence right
-    Also add concat:css to build command
 
-glossary sticky headings not lined up on portrait
+for ion icons use npm install and remove from build.
+    1. enter this at command line "npm i ionicons-npm" (with --save or --save-dev).
+    2. enter this in main.scss file '@import "../css/ionicons.css";'
+    3. remove concat references from json file
+    4. change hamburger, close, and linkedin icons, maybe add twitter
 
-Build breaks image retrieval
-
-phone about me image obscures text, hamburger menu needs more right margin.
-
-MAC Laptop-- shadows around header elements
+ dows around header elements, eliminated top one by takeing away padding. Reducing font size will make it reappear. but right side is stubborn
 iOS projects subtext not centered, but right aligned
 
 desktop -- if hamburger pressed on and off, main not show on resize to large

@@ -64,20 +64,20 @@ $(document).ready(function () {
     //Check if glossary open on term click
     $(".js--openGlossary").click(function () {
         if (!$('js--checkVisible').is(':visible')) {
-           $(".glossary").removeClass("u-hideItem");
+            $(".glossary").removeClass("u-hideItem");
         }
     });
 
     //Show sticky header row in glossary
     $(".js--showSticky").waypoint(function (direction) {
-        if (direction == "down") {
-            $(".glossary__sticky").css("display", "flex");
-        } else {
-            $(".glossary__sticky").css("display", "none");
+        var screenWidth = window.matchMedia("(max-width: 600px");
+        if (!screenWidth.matches) {
+            if (direction == "down") {
+                $(".glossary__sticky").css("display", "flex");
+            } else {
+                $(".glossary__sticky").css("display", "none");
+            }
         }
     });
-
-
-
 });
 

@@ -53,10 +53,11 @@
         display: none;
         position: fixed;
         top: 2rem;
-        right: 2rem;
+        right: 5rem;
         @include respond(portrait) {
             display: block;
         }
+        
         &-hamburger {
             height: 3rem;
         }

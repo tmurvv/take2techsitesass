@@ -109,9 +109,6 @@
         clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
         opacity: .9;
         border: none;
-        @include respond(portrait) {
-            display: none;
-        }
     }
 }
 
