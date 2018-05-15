@@ -409,7 +409,6 @@ HEADER ELEMENTS INSTRUCTIONS
     height: 40rem;
     position: relative;
     transition: all 0.8s ease;
-    backface-visibility: hidden;
     padding: 2rem;
     color: #ffffff;
     border-radius: 7px;
@@ -444,7 +443,6 @@ HEADER ELEMENTS INSTRUCTIONS
       position: absolute;
       top: 0;
       left: 0;
-      transform: rotateY(180deg);
       z-index: -1;
       color: #ffffff; }
       @media only screen and (max-width: 75em) {
@@ -454,14 +452,16 @@ HEADER ELEMENTS INSTRUCTIONS
         margin: 2rem 2rem 0;
         text-decoration: none;
         font-size: 80%;
-        text-transform: capitalize; }
+        text-transform: capitalize;
+        padding: 15px;
+        border-radius: 7px; }
         .card__side--back > .o-list > li > a:link,
         .card__side--back > .o-list > li > a:visited {
           text-decoration: none;
           color: #fff5e7; }
         .card__side--back > .o-list > li > a:hover,
         .card__side--back > .o-list > li > a:active {
-          color: #faebd7; }
+          color: #7bccc2; }
       .card__side--back-btn {
         width: 80%;
         margin: -1rem auto 0;
@@ -482,22 +482,15 @@ HEADER ELEMENTS INSTRUCTIONS
           .card__side--back-btnContainer > button {
             opacity: 1;
             visibility: visible; }
-  .card:hover .card__side--front {
-    transform: rotatey(-180deg); }
-    @media only screen and (max-width: 75em) {
-      .card:hover .card__side--front {
-        transform: none; } }
-  .card:hover .card__side--back {
-    transform: rotatey(0); }
-    .card:hover .card__side--back .card__side--back-btnContainer > button {
-      opacity: 0;
-      visibility: hidden; }
-    @media only screen and (max-width: 75em) {
-      .card:hover .card__side--back {
-        transform: none; }
-        .card:hover .card__side--back .card__side--back-btnContainer > button {
-          opacity: 1;
-          visibility: visible; } }
+  @media only screen and (max-width: 75em) {
+    .card:hover .card__side--front {
+      transform: none; } }
+  @media only screen and (max-width: 75em) {
+    .card:hover .card__side--back {
+      transform: none; }
+      .card:hover .card__side--back .card__side--back-btnContainer > button {
+        opacity: 1;
+        visibility: visible; } }
 
 .sectionGlossary__viewBtnCont {
   width: 100%;

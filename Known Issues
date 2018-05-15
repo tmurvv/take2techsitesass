@@ -5,7 +5,11 @@ for ion icons use npm install and remove from build.
     3. remove concat references from json file
     4. change hamburger, close, and linkedin icons, maybe add twitter
 
- dows around header elements, eliminated top one by takeing away padding. Reducing font size will make it reappear. but right side is stubborn
+ shawdows around header elements, eliminated top one by takeing away padding. Reducing font size will make it reappear. but right side is stubborn
 iOS projects subtext not centered, but right aligned
 
 desktop -- if hamburger pressed on and off, main not show on resize to large
+
+make card flip on tech spec select
+
+change color palette
