@@ -37,7 +37,8 @@ HEADER ELEMENTS INSTRUCTIONS
             }
 
             &>span {
-                @include clipTextTertiaryRev;
+                //@include clipTextTertiaryRev;
+                color: $colorTertiary-dark;
                 font-size: 85%;
                 font-weight: 500;
             }
@@ -46,10 +47,12 @@ HEADER ELEMENTS INSTRUCTIONS
         &--subText {
             font-weight: 400;           
             font-size: 75%;
-            background-image: linear-gradient(to right, $colorSecondary 70%, $colorTertiary-dark); 
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;            
+            // background-image: linear-gradient(to right, $colorSecondary 70%, $colorTertiary-dark); 
+            // -webkit-background-clip: text;
+            // background-clip: text;
+            // color: transparent;
+            color: $colorPrimary-dark;
+
         }
     }
     

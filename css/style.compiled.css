@@ -34,11 +34,7 @@ body {
   font-size: 4rem;
   font-weight: 400;
   display: inline-block;
-  background-image: linear-gradient(to right, #fff5e7 5%, #963168);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  color: transparent;
+  color: #963168;
   letter-spacing: .2rem;
   transition: all .2s; }
   @media only screen and (max-width: 28em) {
@@ -50,10 +46,7 @@ body {
 
 .o-headingSecondary {
   display: inline-block;
-  background-image: linear-gradient(to right, #7bccc2, #4c7571);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #963168;
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -224,19 +217,13 @@ HEADER ELEMENTS INSTRUCTIONS
     .header__heroBox--mainHeading:focus {
       outline: none; }
     .header__heroBox--mainHeading > span {
-      background-image: linear-gradient(to right, #963168, #fff5e7 80%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
+      color: #963168;
       font-size: 85%;
       font-weight: 500; }
   .header__heroBox--subText {
     font-weight: 400;
     font-size: 75%;
-    background-image: linear-gradient(to right, #fff5e7 70%, #963168);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; }
+    color: #4c7571; }
 
 .header.ion-navicon {
   color: #ffffff;
