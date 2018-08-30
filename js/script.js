@@ -11,7 +11,11 @@ $(document).ready(function () {
         var hamburgerVis = $(".nav__mobileNav--icon-hamburger:visible");
         var close = $(".nav__mobileNav--icon-close");
 
-        mainNav.slideToggle(200);
+        mainNav.slideToggle(200, function() {
+            if (mainNav.is(":hidden")) {
+                mainNav.removeAttr("style");               
+            }
+        });
 
         if ((hamburgerVis).length == 0) {
             hamburger.css("display", "block");
@@ -67,6 +71,36 @@ $(document).ready(function () {
         $("#popup3").css("transform", "rotatey(-180)");
         $("#popup3").css("opacity", "0");
         $("#popup3").css("visibility", "0"); 
+    });
+
+    //Card4
+    $(".js--cardFrontTechnical4").click(function () {
+        $(".js--popup4").css("transform", "rotatey(-180deg)");
+        $("#popup4").css("transform", "rotatey(0)");
+        $("#popup4").css("opacity", "1");
+        $("#popup4").css("visibility", "1");  
+    });
+
+    $(".js--popBack4").click(function () {
+        $(".js--popup4").css("transform", "rotatey(0)");
+        $("#popup4").css("transform", "rotatey(-180)");
+        $("#popup4").css("opacity", "0");
+        $("#popup4").css("visibility", "0"); 
+    });
+
+    //Card5
+    $(".js--cardFrontTechnical5").click(function () {
+        $(".js--popup5").css("transform", "rotatey(-180deg)");
+        $("#popup5").css("transform", "rotatey(0)");
+        $("#popup5").css("opacity", "1");
+        $("#popup5").css("visibility", "1");  
+    });
+
+    $(".js--popBack5").click(function () {
+        $(".js--popup5").css("transform", "rotatey(0)");
+        $("#popup5").css("transform", "rotatey(-180)");
+        $("#popup5").css("opacity", "0");
+        $("#popup5").css("visibility", "0"); 
     });
 
     /********************
